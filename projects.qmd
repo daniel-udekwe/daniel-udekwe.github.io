@@ -1,0 +1,9 @@
+---
+title: <br> <br> <br> <br> 
+excerpt: My current CV
+execute:
+  freeze: true  # never re-render during project render
+engine: knitr 
+---
+
+------------------------------------------------------------------------

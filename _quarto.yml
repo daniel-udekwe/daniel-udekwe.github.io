@@ -1,0 +1,65 @@
+title-block-banner: "banner.png"
+toc: false
+project:
+  type: website
+  output-dir: docs
+
+website:
+  repo-url: https://github.com/daniel-a-udekwe/daniel-a-udekwe.github.io
+  #repo-actions: [source]
+  title: "Daniel Udekwe"
+  image: images/danny.jpg
+  navbar:
+    left:
+      - text: Resume
+        href: cv.qmd
+      - text: Publications
+        href: pubs.qmd
+      - text: "Projects"
+        href: projects.qmd
+      - text: Blog
+        href: blog.qmd
+      #- about.qmd
+    right:
+      - icon: github
+        href: https://github.com/daniel-udekwe
+      - icon: twitter
+        href: https://twitter.com
+      - icon: linkedin
+        href: https://linkedin.com/in/daniel-a-udekwe-19a2bbb2
+  page-footer: 
+    background: light
+    left: Copyright 2024, Danny_UDK - All rights reserved
+    right: This website is built by Daniel Udekwe with [Quarto](https://quarto.org/)
+
+        
+#format:
+  #html:
+    #theme: cosmo
+    #css: styles.css
+
+format: 
+  html:
+    page-layout: full
+    sidebar: false
+    theme: 
+      - flatly
+      - styles.scss
+    #theme: minty
+    #theme: slate
+    #theme: green_theme.scss
+    
+    code-tools: true
+    comments:
+      giscus:
+        repo: daniel-udekwe/daniel-udekwe.github.io
+        category: Announcements
+        loading: lazy
+        input-position: bottom
+        language: en
+    
+    mainfont: Comic Sans Ms
+    toc: true
+
+editor: visual
+

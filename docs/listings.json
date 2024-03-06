@@ -1,0 +1,26 @@
+[
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/First Blog Post/index.html",
+      "/posts/Fourth Blog Post/index.html",
+      "/posts/Second Blog Post/index.html",
+      "/posts/Fifth Blog Post/index.html",
+      "/posts/Third Blog Post/index.html"
+    ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/index.html",
+      "/about.html",
+      "/cv.html",
+      "/blog.html",
+      "/posts/First Blog Post/index.html",
+      "/posts/Fourth Blog Post/index.html",
+      "/posts/Second Blog Post/index.html",
+      "/posts/Fifth Blog Post/index.html",
+      "/posts/Third Blog Post/index.html"
+    ]
+  }
+]

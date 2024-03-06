@@ -1,0 +1,72 @@
+---
+title: <br> <br> <br> <br> 
+comments: false
+excerpt: My current CV
+execute:
+  freeze: true  # never re-render during project render
+engine: knitr 
+---
+
+------------------------------------------------------------------------
+
+::: column-screen
+```{=html}
+<link rel="stylesheet" href="landing_page_styles.css">
+
+<div class="gradient_bg">
+    <div class="hero section_padding">
+        <div class="hero_content">
+          
+            <h1><span class="gradient_text">2024</span>.</h1>
+            <p>Udekwe, D., Ajayi, O. O., Ubadike, O., Ter, K., & Okafor, E. (2024). Comparing actor-critic deep reinforcement learning controllers for enhanced performance on a ball-and-plate system. Expert Systems with Applications, 245, 123055. <b><span style="color:#E6AA04""><a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417423035571">[PDF]</a></span></b> 
+            </p>
+            
+            
+            <h1><span class="gradient_text">2023</span>.</h1>
+            <p> Adetifa, A., Okonkwo, P., Muhammed, B. B. & Udekwe, D Design and Performance Evaluation of a Deep Reinforcement Learning Based Longitudinal Control Augmentation System<b><span style="color:#E6AA04""> [<a href="https://www.ajol.info/index.php/njt/article/view/247220/233836">PDF</a>]</span></b> 
+            </p>
+            
+            <h1><span class="gradient_text">2022</span>.</h1>
+            <p> Ubadike, O,. Udekwe, D., Bonet, M. U., Momoh, M. O., Makinde, O.M., Omada J. E., Mohammed, A. Development of a BLDC Motor Starter-Generator for an Experimental UAV<b><span style="color:#E6AA04""> [<a href="https://www.ftstjournal.com/uploads/docs/72%20Article%2019.pdf">PDF</a>]</span></b>
+            </p>
+            
+            <h1><span class="gradient_text">2021</span>.</h1>
+            <p>Okafor, E., Udekwe, D., Ibrahim, Y., Bashir Mu’azu, M., & Okafor, E. G. Heuristic and deep reinforcement learning-based PID control of trajectory tracking in a ball-and-plate system <b><span style="color:#E6AA04""><a href="https://www.tandfonline.com/doi/epdf/10.1080/24751839.2020.1833137?needAccess=true&role=button">[PDF]</a></span></b>
+            </p>
+            
+            <p>Okafor, E. G., Udekwe, D., Ubadike, O. C., Okafor, E., Jemitola, P. O., & Abba, M. T. Photovoltaic System MPPT Evaluation Using Classical, Meta-Heuristics, and Reinforcement Learning-Based Controllers <b><span style="color:#E6AA04""><a href="https://www.jsju.org/index.php/journal/article/view/881">[PDF]</a></span></b>
+            </p>
+            
+            <p>Okafor, E. G., Okafor, E., Ubadike, O. C., Abba, M. T., Jemitola, P. O., Shinkafi, A. A., ... & Udekwe, D. Electric Vehicle Integrated with PMSM and Regenerative Braking System Speed Evaluation based on Diverse Control Strategies <b><span style="color:#E6AA04""><a href="https://www.jsju.org/index.php/journal/article/view/1072"> [PDF]</a></span></b>
+            </p>
+            
+            <p>Okafor, E.G., Udekwe, D., Muhammad H., Ubadike, O., & Okafor, E.C. Solar System Maximum Power Point Tracking Evaluation Using Reinforcement Learning <b><span style="color:#E6AA04""><a href="https://www.researchgate.net/profile/E-Okafor/publication/357447477_Solar_System_Maximum_Power_Point_Tracking_Evaluation_Using_Reinforcement_Learning/links/61ce7826b6b5667157b8c6b0/Solar-System-Maximum-Power-Point-Tracking-Evaluation-Using-Reinforcement-Learning.pdf">[PDF]</a></span></b>
+            </p>
+            <p>Mohammed, A., Sule, G., Ahmad, R., Yahaya, J., Zango, M., Okuneye, A., Udekwe, D., Suleiman, N., Idris, M., Applications of unmanned aerial robots for precision agriculture: An Overview</p>
+    
+    
+            <h1><span class="gradient_text">2020</span>.</h1>
+            <p>Ajayi O., Zaharuddeen H., Idakwe M.A., Usman N.S., Udekwe D.A. (2020). Development of a modified simple event function for event based control of inverted pendulum on a cart</p>
+            
+            <p>Ajayi O., Idakwo M.A., Udekwe D.A., Usman N.S. (2020). Development of an improved hybrid low energy adaptive clustering hierarchyiii (hybrid leach) protocol for wireless sensor network</p>
+            
+            <p>Ajayi O., Idakwo M.A., Udekwe D.A., Adekale M.A. Usman N.S. (2020). Design of a Graphical User Interface Based System Administrative Tool
+</p>
+    
+    
+            <h1><span class="gradient_text">2019</span>.</h1>
+            <p>Garba, S., Yahaya, B., Sadiq, B. O., Udekwe, D. A., & Abubakar, Z. M. (2019, October). Implementation of Timing and Synchronization in Digital Clocks: A Wireless Communication Design <b><span style="color:#E6AA04""><a href="https://ieeexplore.ieee.org/document/8949619">[PDF]</a></span></b>
+            </p>
+    
+    
+    
+
+
+</div>
+
+
+<script src="jquery.min.js"></script>
+<script src="TweenMax.min.js"></script>
+<!--<script src="parallax.js"></script>-->
+```
+:::
