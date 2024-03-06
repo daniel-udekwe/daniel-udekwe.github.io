@@ -1,0 +1,305 @@
+---
+title: "Clustering"
+author: "Daniel A. Udekwe"
+date: "2023-11-23"
+categories: [data, code, analysis]
+image: "cluster.png"
+---
+
+Clustering is a type of unsupervised machine learning technique where the goal is to group similar data points together based on certain characteristics or features. The objective is to identify natural patterns or structures within the data without the need for predefined labels.
+
+In a clustering algorithm, the algorithm tries to partition the dataset into groups, or clusters, where data points within the same cluster are more similar to each other than to those in other clusters. The idea is that data points in the same cluster share some underlying patterns or properties, and these clusters can provide insights into the inherent structure of the data.
+
+There are various clustering algorithms, each with its own approach to defining what constitutes a "similar" data point and how to form clusters. Some popular clustering algorithms include K-means clustering, hierarchical clustering, and DBSCAN (Density-Based Spatial Clustering of Applications with Noise).
+
+Here's a brief overview of a couple of commonly used clustering algorithms:
+
+1.  **K-means Clustering:**
+
+    -   Divides the data into a specified number of clusters (k).
+
+    -   Assigns each data point to the cluster whose mean (centroid) is closest to that point.
+
+    -   Iteratively refines the cluster assignments until convergence.
+
+2.  **Hierarchical Clustering:**
+
+    -   Builds a hierarchy of clusters in the form of a tree (dendrogram).
+
+    -   Can be agglomerative (bottom-up) or divisive (top-down).
+
+    -   At each step, the algorithm merges or splits clusters based on a defined similarity measure.
+
+3.  **DBSCAN (Density-Based Spatial Clustering of Applications with Noise):**
+
+    -   Groups together data points that are close to each other and have a sufficient number of nearby neighbors.
+
+    -   Can identify clusters with irregular shapes and can also detect outliers as noise.
+
+Other clustering algorithms are: density-based, distribution-based, centroid-based and hierarchical-based clustering.
+
+Clustering is used in various applications, including customer segmentation, image segmentation, anomaly detection, and more. It is particularly valuable when the structure of the data is not well-defined or when there is no labeled training data available for supervised learning.
+
+## Implementation
+
+We will use the [*make_classification()*]{.underline} function of the scikit learn library to create a test binary classification dataset. The dataset will have 1,000 examples, with two input features and one cluster per class. The clusters are visually obvious in two dimensions so that we can plot the data with a scatter plot and color the points in the plot by the assigned cluster. This will help to see, at least on the test problem, how "well" the clusters were identified.
+
+It is worth mentionining that the clusters in this test problem are based on a multivariate Gaussian, and not all clustering algorithms will be effective at identifying these types of clusters.
+
+An example of creating and summarizing the synthetic clustering dataset is listed below.
+
+```{python}
+# synthetic classification dataset
+from numpy import where
+from sklearn.datasets import make_classification
+from matplotlib import pyplot
+# define dataset
+X, y = make_classification(n_samples=1000, n_features=2, n_informative=2, n_redundant=0, n_clusters_per_class=1, random_state=4)
+# create scatter plot for samples from each class
+for class_value in range(2):
+	# get row indexes for samples with this class
+	row_ix = where(y == class_value)
+	# create scatter of these samples
+	pyplot.scatter(X[row_ix, 0], X[row_ix, 1])
+# show the plot
+pyplot.show()
+```
+
+Running the example creates the synthetic clustering dataset, then creates a scatter plot of the input data with points colored by class label (idealized clusters).
+
+We can clearly see two distinct groups of data in two dimensions and the hope would be that an automatic clustering algorithm can detect these groupings.
+
+## K-means clustering algorithm
+
+K-means clustering is the most commonly used clustering algorithm. It's a centroid-based algorithm and the simplest unsupervised learning algorithm.
+
+This algorithm tries to minimize the variance of data points within a cluster. It's also how most people are introduced to unsupervised machine learning.
+
+K-means is best used on smaller data sets because it iterates over *all* of the data points. That means it'll take more time to classify data points if there are a large amount of them in the data set.
+
+Since this is how k-means clusters data points, it doesn't scale well.
+
+```{python}
+# k-means clustering
+from numpy import unique
+from numpy import where
+from sklearn.datasets import make_classification
+from sklearn.cluster import KMeans
+from matplotlib import pyplot
+import warnings
+warnings.filterwarnings("ignore")
+# define dataset
+X, _ = make_classification(n_samples=1000, n_features=2, n_informative=2, n_redundant=0, n_clusters_per_class=1, random_state=4)
+# define the model
+model = KMeans(n_clusters=2)
+# fit the model
+model.fit(X)
+# assign a cluster to each example
+yhat = model.predict(X)
+# retrieve unique clusters
+clusters = unique(yhat)
+# create scatter plot for samples from each cluster
+for cluster in clusters:
+	# get row indexes for samples with this cluster
+	row_ix = where(yhat == cluster)
+	# create scatter of these samples
+	pyplot.scatter(X[row_ix, 0], X[row_ix, 1])
+# show the plot
+pyplot.show()
+```
+
+### Mini-Batch K-Means
+
+Mini-Batch K-Means is a modified version of k-means that makes updates to the cluster centroids using mini-batches of samples rather than the entire dataset, which can make it faster for large datasets, and perhaps more robust to statistical noise.
+
+```{python}
+# mini-batch k-means clustering
+from numpy import unique
+from numpy import where
+from sklearn.datasets import make_classification
+from sklearn.cluster import MiniBatchKMeans
+from matplotlib import pyplot
+import warnings
+warnings.filterwarnings("ignore")
+# define dataset
+X, _ = make_classification(n_samples=1000, n_features=2, n_informative=2, n_redundant=0, n_clusters_per_class=1, random_state=4)
+# define the model
+model = MiniBatchKMeans(n_clusters=2)
+# fit the model
+model.fit(X)
+# assign a cluster to each example
+yhat = model.predict(X)
+# retrieve unique clusters
+clusters = unique(yhat)
+# create scatter plot for samples from each cluster
+for cluster in clusters:
+	# get row indexes for samples with this cluster
+	row_ix = where(yhat == cluster)
+	# create scatter of these samples
+	pyplot.scatter(X[row_ix, 0], X[row_ix, 1])
+# show the plot
+pyplot.show()
+```
+
+## **DBSCAN clustering algorithm**
+
+DBSCAN stands for density-based spatial clustering of applications with noise. It's a density-based clustering algorithm, unlike k-means.
+
+This is a good algorithm for finding outliners in a data set. It finds arbitrarily shaped clusters based on the density of data points in different regions. It separates regions by areas of low-density so that it can detect outliers between the high-density clusters.
+
+This algorithm is better than k-means when it comes to working with oddly shaped data.
+
+DBSCAN uses two parameters to determine how clusters are defined: *minPts* (the minimum number of data points that need to be clustered together for an area to be considered high-density) and *eps* (the distance used to determine if a data point is in the same area as other data points).
+
+Choosing the right initial parameters is critical for this algorithm to work.
+
+```{python}
+# dbscan clustering
+from numpy import unique
+from numpy import where
+from sklearn.datasets import make_classification
+from sklearn.cluster import DBSCAN
+from matplotlib import pyplot
+# define dataset
+X, _ = make_classification(n_samples=1000, n_features=2, n_informative=2, n_redundant=0, n_clusters_per_class=1, random_state=4)
+# define the model
+model = DBSCAN(eps=0.30, min_samples=9)
+# fit model and predict clusters
+yhat = model.fit_predict(X)
+# retrieve unique clusters
+clusters = unique(yhat)
+# create scatter plot for samples from each cluster
+for cluster in clusters:
+	# get row indexes for samples with this cluster
+	row_ix = where(yhat == cluster)
+	# create scatter of these samples
+	pyplot.scatter(X[row_ix, 0], X[row_ix, 1])
+# show the plot
+pyplot.show()
+```
+
+## **Agglomerative Hierarchy clustering algorithm**
+
+This is the most common type of hierarchical clustering algorithm. It's used to group objects in clusters based on how similar they are to each other.
+
+This is a form of bottom-up clustering, where each data point is assigned to its own cluster. Then those clusters get joined together.
+
+At each iteration, similar clusters are merged until all of the data points are part of one big root cluster.
+
+Agglomerative clustering is best at finding small clusters. The end result looks like a dendrogram so that you can easily visualize the clusters when the algorithm finishes.
+
+```{python}
+# agglomerative clustering
+from numpy import unique
+from numpy import where
+from sklearn.datasets import make_classification
+from sklearn.cluster import AgglomerativeClustering
+from matplotlib import pyplot
+# define dataset
+X, _ = make_classification(n_samples=1000, n_features=2, n_informative=2, n_redundant=0, n_clusters_per_class=1, random_state=4)
+# define the model
+model = AgglomerativeClustering(n_clusters=2)
+# fit model and predict clusters
+yhat = model.fit_predict(X)
+# retrieve unique clusters
+clusters = unique(yhat)
+# create scatter plot for samples from each cluster
+for cluster in clusters:
+	# get row indexes for samples with this cluster
+	row_ix = where(yhat == cluster)
+	# create scatter of these samples
+	pyplot.scatter(X[row_ix, 0], X[row_ix, 1])
+# show the plot
+pyplot.show()
+```
+
+### BIRCH
+
+BIRCH Clustering (BIRCH is short for Balanced Iterative Reducing and Clustering using Hierarchies) involves constructing a tree structure from which cluster centroids are extracted.
+
+```{python}
+# birch clustering
+from numpy import unique
+from numpy import where
+from sklearn.datasets import make_classification
+from sklearn.cluster import Birch
+from matplotlib import pyplot
+# define dataset
+X, _ = make_classification(n_samples=1000, n_features=2, n_informative=2, n_redundant=0, n_clusters_per_class=1, random_state=4)
+# define the model
+model = Birch(threshold=0.01, n_clusters=2)
+# fit the model
+model.fit(X)
+# assign a cluster to each example
+yhat = model.predict(X)
+# retrieve unique clusters
+clusters = unique(yhat)
+# create scatter plot for samples from each cluster
+for cluster in clusters:
+	# get row indexes for samples with this cluster
+	row_ix = where(yhat == cluster)
+	# create scatter of these samples
+	pyplot.scatter(X[row_ix, 0], X[row_ix, 1])
+# show the plot
+pyplot.show()
+```
+
+### Affinity Propagation
+
+Affinity Propagation involves finding a set of exemplars that best summarize the data.
+
+```{python}
+# affinity propagation clustering
+from numpy import unique
+from numpy import where
+from sklearn.datasets import make_classification
+from sklearn.cluster import AffinityPropagation
+from matplotlib import pyplot
+# define dataset
+X, _ = make_classification(n_samples=1000, n_features=2, n_informative=2, n_redundant=0, n_clusters_per_class=1, random_state=4)
+# define the model
+model = AffinityPropagation(damping=0.9)
+# fit the model
+model.fit(X)
+# assign a cluster to each example
+yhat = model.predict(X)
+# retrieve unique clusters
+clusters = unique(yhat)
+# create scatter plot for samples from each cluster
+for cluster in clusters:
+	# get row indexes for samples with this cluster
+	row_ix = where(yhat == cluster)
+	# create scatter of these samples
+	pyplot.scatter(X[row_ix, 0], X[row_ix, 1])
+# show the plot
+pyplot.show()
+```
+
+### Spectral Clustering
+
+Spectral Clustering is a general class of clustering methods, drawn from [linear algebra](https://machinelearningmastery.com/linear-algebra-machine-learning-7-day-mini-course/).
+
+```{python}
+# spectral clustering
+from numpy import unique
+from numpy import where
+from sklearn.datasets import make_classification
+from sklearn.cluster import SpectralClustering
+from matplotlib import pyplot
+# define dataset
+X, _ = make_classification(n_samples=1000, n_features=2, n_informative=2, n_redundant=0, n_clusters_per_class=1, random_state=4)
+# define the model
+model = SpectralClustering(n_clusters=2)
+# fit model and predict clusters
+yhat = model.fit_predict(X)
+# retrieve unique clusters
+clusters = unique(yhat)
+# create scatter plot for samples from each cluster
+for cluster in clusters:
+	# get row indexes for samples with this cluster
+	row_ix = where(yhat == cluster)
+	# create scatter of these samples
+	pyplot.scatter(X[row_ix, 0], X[row_ix, 1])
+# show the plot
+pyplot.show()
+```
