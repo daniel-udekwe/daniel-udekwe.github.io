@@ -27,21 +27,21 @@ format:
 <div class="gradient_bg">
     <div class="hero section_padding">
         <div class="hero_content">
-            <h1>Hi, I'm <span class="gradient_text">Daniel</span>.</h1>
-            <p> Experienced Researcher & Teacher Assistant currently pursuing a Ph.D at Virginia Tech. Skilled in Robotics, Python, ROS, C++, Unity3D.</p>
+            <h1>Hi, I'm <span class="gradient_text">Danny</span>.</h1>
+            <p> Experienced Researcher & Teaching Assistant currently pursuing a Ph.D at Virginia Tech. Skilled in Robotics, Python, ROS, C++, Unity3D.</p>
             
             <p> <b><span style="color:#E6AA04"">Research Interest:</span></b> Human-Robot Interaction, Virtual/Augmented/Mixed/Extended Reality, Control/Autonomous Systems, Optimization, Deep Learning, Reinforcement Learning </p>
             
             <p><b><span style="color:#E6AA04"">Office Address:</span></b>: 177 Advanced Innovations in Ag | Ag Tech Innovations Lab 1008, 1880 Pratt Dr, Blacksburg, VA </p>
             
              <p> <b><span style="color:#E6AA04"">Education:</span></b> <br>
-             MSC., Control Engineering <br>
+             MSc., Control Engineering <br>
             <a href="https://engineering.abu.edu.ng/department/compeng/public/about-us.php"><span style='text-decoration: underline;
   text-decoration-color: #E6AA04;'>Department of Computer Engineering</span></a> <br>
             <a href="http://www.abu.edu.ng"><span style='text-decoration: underline;
   text-decoration-color: #E6AA04;'>Ahmadu Bello University</span></a> <br>
             <a href="http://www.linkedin.com/in/emmanuel-okafor-b48799100"><span style='text-decoration: underline;
-  text-decoration-color: #E6AA04;'>Advisor: Emmanuel Okafor, PhD </span></a> 
+  text-decoration-color: #E6AA04;'>Advisor: Emmanuel Okafor, Ph.D </span></a> 
             <br> <br> 
             BEng,. Electrical Engineering <br>
             <a href="https://engineering.abu.edu.ng/department/electeng/public/beng.php"><span style='text-decoration: underline;
@@ -49,7 +49,7 @@ format:
             <a href="http://www.abu.edu.ng"><span style='text-decoration: underline;
   text-decoration-color: #E6AA04;'>Ahmadu Bello University</span></a> <br>
             <a href="https://scholar.google.com/citations?user=WXxFFxgAAAAJ&hl=en"><span style='text-decoration: underline;
-  text-decoration-color: #E6AA04;'>Advisor: Basira Yahaya, PhD</span></a></p>
+  text-decoration-color: #E6AA04;'>Advisor: Basira Yahaya, Ph.D</span></a></p>
             
 
             <p>Here is my <a href="cv.qmd"><span style='text-decoration: underline;
