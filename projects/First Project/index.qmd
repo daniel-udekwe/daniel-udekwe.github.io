@@ -204,3 +204,17 @@ float KALMAN (float U){
 //https://www.utmel.com/components/how-to-use-mq4-gas-sensor?id=821
 //I do not not claim ownership of this code #copyright 10-03-2023
 ```
+
+The 3D model of the box housing the arduino and other components is shown below:
+
+![](sensorBox.png){fig-align="center" width="414"}
+
+The mask housing the methane sensors is shown below:
+
+![](sensorMask.png){fig-align="center"}
+
+Finally, the overall system setup is shown below:
+
+![](overallsetup.png){fig-align="center"}
+
+A link for 3D visualtion: <https://collaborate.shapr3d.com/v/pm4wyNe9QLAsHzlwYDE5A>
