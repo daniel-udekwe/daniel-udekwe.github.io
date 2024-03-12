@@ -12,15 +12,8 @@
   {
     "listing": "/projects.html",
     "items": [
-      "/index.html",
-      "/about.html",
-      "/cv.html",
-      "/blog.html",
-      "/posts/First Blog Post/index.html",
-      "/posts/Fourth Blog Post/index.html",
-      "/posts/Second Blog Post/index.html",
-      "/posts/Fifth Blog Post/index.html",
-      "/posts/Third Blog Post/index.html"
+      "/projects/First Project/index.html",
+      "/projects/Second Project/index.html"
     ]
   }
 ]
