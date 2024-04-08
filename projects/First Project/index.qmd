@@ -6,7 +6,7 @@ categories: [data, code, analysis]
 title-block-banner: true
 ---
 
-# Background 
+# Background
 
 Livestock farming, particularly the dairy and beef industries, plays a significant role in global agricultural economies, providing essential food products and livelihoods for millions worldwide. However, one of the most pressing challenges associated with this industry is the environmental impact of methane emissions from cattle. Methane, a potent greenhouse gas, contributes significantly to climate change, with livestock farming being a major source of its emission.
 
