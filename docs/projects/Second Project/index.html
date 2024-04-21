@@ -199,7 +199,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
-  <li><a href="#system-design" id="toc-system-design" class="nav-link" data-scroll-target="#system-design">System Design</a></li>
+  <li><a href="#system-design" id="toc-system-design" class="nav-link" data-scroll-target="#system-design">System Design</a>
+  <ul class="collapse">
+  <li><a href="#components" id="toc-components" class="nav-link" data-scroll-target="#components">Components</a></li>
+  </ul></li>
+  <li><a href="#system-development" id="toc-system-development" class="nav-link" data-scroll-target="#system-development">System Development</a></li>
+  <li><a href="#tele-operating-the-arm-and-ugv" id="toc-tele-operating-the-arm-and-ugv" class="nav-link" data-scroll-target="#tele-operating-the-arm-and-ugv">Tele-operating the arm and UGV</a></li>
   <li><a href="#to-be-continued" id="toc-to-be-continued" class="nav-link" data-scroll-target="#to-be-continued">To Be Continued …</a></li>
   </ul>
 </nav>
@@ -214,15 +219,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Background</h1>
 <p>The agricultural industry is undergoing a technological revolution driven by automation and robotics. With the rising demand for efficient and sustainable farming practices, there is a growing need for advanced solutions that can address challenges such as labor shortages, increasing production demands, and resource optimization. In this context, the integration of robotics and virtual reality (VR) technologies presents a promising avenue for enhancing agricultural operations.</p>
 <p>The project focuses on the development and implementation of a cutting-edge system that combines a Husky Unmanned Ground Vehicle (UGV) and a Kinova Gen3 robotic arm, controlled through immersive virtual reality interfaces. The Husky UGV, renowned for its ruggedness, versatility, and mobility, serves as the mobile platform for navigating through agricultural environments, while the Kinova Gen3 arm provides dexterity and precision for performing various tasks such as fruit harvesting and crop inspection.</p>
-<p>The utilization of virtual reality technology enables operators to teleoperate the Husky UGV and manipulate the Kinova Gen3 arm from a remote location with an unprecedented level of immersion and control. By donning VR headsets and motion-tracking controllers, operators can visualize the agricultural environment in real-time, interact with the robotic system, and execute complex maneuvers with intuitive gestures.</p>
-<p>Key Objectives:</p>
-<ol type="1">
-<li><p><strong>Enhanced Mobility and Manipulation</strong>: The integration of the Husky UGV and Kinova Gen3 arm aims to provide a versatile platform capable of navigating challenging terrain and performing intricate tasks with agility and precision. By combining mobility with manipulation capabilities, the system can effectively adapt to diverse agricultural environments and address a wide range of tasks, including fruit harvesting, crop monitoring, and precision spraying.</p></li>
-<li><p><strong>Improved Efficiency and Productivity</strong>: By automating labor-intensive tasks and reducing reliance on manual labor, the proposed system seeks to enhance operational efficiency and productivity in agricultural operations. The seamless integration of robotics and VR technology enables operators to remotely supervise and control the robotic system with enhanced situational awareness, leading to optimized workflows and resource utilization.</p></li>
-<li><p><strong>Minimized Environmental Impact</strong>: With a focus on sustainability, the project aims to minimize the environmental impact of agricultural practices by promoting precision agriculture and targeted interventions. By leveraging robotics for precise task execution and data collection, farmers can optimize inputs such as water, fertilizers, and pesticides, thereby reducing waste and minimizing environmental degradation.</p></li>
-<li><p><strong>Scalability and Adaptability</strong>: The developed system is designed to be scalable and adaptable to different agricultural settings and tasks. Whether deployed in orchards, vineyards, or open fields, the modular architecture of the system allows for easy customization and integration of additional sensors or peripherals to meet specific requirements and challenges encountered in various agricultural contexts.</p></li>
-</ol>
-<p>Overall, the project seeks to demonstrate the feasibility and potential of teleoperating a Husky UGV and Kinova Gen3 arm with VR technology for agricultural applications, paving the way for the adoption of advanced robotics solutions to address the evolving needs of the agricultural industry. Through collaboration with stakeholders and field trials in real-world agricultural settings, the project aims to validate the effectiveness, reliability, and economic viability of the proposed system, ultimately contributing to the advancement of sustainable and efficient farming practices.</p>
 </section>
 <section id="system-design" class="level1">
 <h1>System Design</h1>
@@ -231,13 +227,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="HRI.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
+<section id="components" class="level2">
+<h2 class="anchored" data-anchor-id="components">Components</h2>
 <ol type="1">
-<li><p><strong>Windows PC running Unity Engine:</strong> The Windows PC serves as the central computing unit responsible for running the Unity Engine, a powerful and versatile game development platform. Unity provides the framework for creating immersive virtual reality experiences and interfaces for controlling the robotic system. It handles tasks such as rendering 3D environments, managing input from VR controllers and headsets, and interfacing with other components of the system.</p></li>
-<li><p><strong>HTC Vive VR Controllers, Headset, and Motion Tracking Devices:</strong> The HTC Vive VR system consists of handheld controllers, a high-resolution headset, and motion tracking devices known as base stations. The controllers allow users to interact with virtual objects and environments with natural hand movements and gestures. The headset provides a fully immersive VR experience, transporting users to virtual agricultural environments in real-time. The motion tracking devices ensure accurate spatial tracking, enabling seamless integration of physical and virtual spaces.</p></li>
-<li><p><strong>Linux Machine running ROS (Robot Operating System):</strong> The Linux machine serves as the primary control system for the robotic components, running the Robot Operating System (ROS). ROS is a flexible framework for building robotic systems, offering tools and libraries for managing hardware abstraction, communication between components, and high-level functionality such as navigation and manipulation. It provides the infrastructure for interfacing with sensors, controlling actuators, and orchestrating complex behaviors within the robotic system.</p></li>
-<li><p><strong>Husky UGV (Unmanned Ground Vehicle):</strong> The Husky UGV is a rugged and versatile mobile platform designed for outdoor environments. Equipped with all-terrain wheels, robust suspension, and powerful motors, the Husky UGV can navigate challenging terrain with ease. It serves as the base platform for transporting the Kinova Gen3 arm and the RealSense camera to various locations within agricultural settings, enabling remote operation and task execution.</p></li>
-<li><p><strong>Kinova Gen3 Arm:</strong> The Kinova Gen3 arm is a state-of-the-art robotic manipulator renowned for its dexterity, precision, and versatility. Featuring multiple degrees of freedom, advanced joint designs, and integrated sensors, the Gen3 arm is capable of performing a wide range of manipulation tasks with exceptional accuracy and efficiency. It serves as the primary tool for tasks such as fruit harvesting, crop inspection, and precision spraying within agricultural environments.</p></li>
-<li><p><strong>RealSense Camera:</strong> The RealSense camera is a depth-sensing RGB-D camera developed by Intel. It provides depth perception and spatial awareness, allowing the robotic system to perceive and interact with its surroundings in three dimensions. The RealSense camera serves as a vital sensory component for tasks such as obstacle avoidance, object recognition, and environmental mapping within agricultural environments, enhancing the autonomy and intelligence of the robotic system.</p></li>
+<li><p><strong>Windows PC running Unity Engine:</strong> The Windows PC serves as the central computing unit responsible for running the Unity Engine, a powerful and versatile game development platform.</p></li>
+<li><p><strong>HTC Vive VR Controllers, Headset, and Motion Tracking Devices:</strong> The HTC Vive VR system consists of handheld controllers, a high-resolution headset, and motion tracking devices known as base stations.</p></li>
+<li><p><strong>Linux Machine running ROS (Robot Operating System):</strong> The Linux machine serves as the primary control system for the robotic components, running the Robot Operating System (ROS).</p></li>
+<li><p><strong>Husky UGV (Unmanned Ground Vehicle):</strong> The Husky UGV is a rugged and versatile mobile platform designed for outdoor environments.</p></li>
+<li><p><strong>Kinova Gen3 Arm:</strong> The Kinova Gen3 arm is a state-of-the-art robotic manipulator renowned for its dexterity, precision, and versatility.</p></li>
+<li><p><strong>RealSense Camera:</strong> The RealSense camera is a depth-sensing RGB-D camera developed by Intel. It provides depth perception and spatial awareness, allowing the robotic system to perceive and interact with its surroundings in three dimensions.</p></li>
 </ol>
 <p>Together, these components form an integrated system for teleoperating a Husky UGV and Kinova Gen3 arm with VR technology, enabling immersive control and execution of agricultural tasks such as fruit harvesting and crop inspection with enhanced efficiency, precision, and adaptability.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -245,6 +243,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="robot.JPG" class="img-fluid figure-img" style="width:60.0%"></p>
 </figure>
 </div>
+</section>
+</section>
+<section id="system-development" class="level1">
+<h1>System Development</h1>
+<ol type="1">
+<li><p>Install ROS</p>
+<p>The following instructions found on this link<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> can be used to install ROS Noetic on Ubuntu 20.04</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-c</span> https://raw.githubusercontent.com/qboticslabs/ros_install_noetic/master/ros_install_noetic.sh <span class="kw">&amp;&amp;</span> <span class="fu">chmod</span> +x ./ros_install_noetic.sh <span class="kw">&amp;&amp;</span> <span class="ex">./ros_install_noetic.sh</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Install ROS#</p>
+<p>ROS# provides Rosbridge server<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> which offers a web-socket connection. This connection will eventually serve as a bridge between the local and remote work spaces.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo apt-get install ros-noetic-rosbridge-server</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Setup Kinova and Realsense ROS nodes.</p>
+<p>Clone this repository into catkin workspace</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git clone https://github.com/daniel-udekwe/ROS_HUSKYKINOVA_ws.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+<p>These steps complete the procedure for setting up the linux computer on the remote workspace. Now to the windows computer on the local workspace</p>
+<ol start="4" type="1">
+<li>Download Unity Hub and install Unity 2021.3.16f1</li>
+<li>Download the project on <a href="https://github.com/daniel-udekwe/Unity_HUSKYKINOVA/archive/refs/heads/master.zip">this link</a>, unzip it then open it in unity</li>
+<li>Locate and open Assets/Scenes/SampleScene.unity</li>
+</ol>
+<p>This completes the setup of the remote and local workspaces. The next steps will involve starting and using the system to teleoperate the UGV and arm</p>
+</section>
+<section id="tele-operating-the-arm-and-ugv" class="level1">
+<h1>Tele-operating the arm and UGV</h1>
+<p>On the linux computer enter the following commands;</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ws_daniel</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> devel/setup.bash</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">roslaunch</span> kinova_ar kinovaAR.launch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>These commands starts the rosbridge server on the linux computer, initializes the Kinova and Realsense nodes.</p>
+<p>On the Windows PC of the local workspace, start the project, ensure that correct IP address is entered in the ROS connectors. Control the arm and UGV with the VR controllers.</p>
 </section>
 <section id="to-be-continued" class="level1">
 <h1>To Be Continued …</h1>
@@ -254,7 +283,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://wiki.ros.org/ROS/Installation/TwoLineInstall/" class="uri">https://wiki.ros.org/ROS/Installation/TwoLineInstall/</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://github.com/siemens/ros-sharp/wiki/User_Inst_ROSOnUbuntu" class="uri">https://github.com/siemens/ros-sharp/wiki/User_Inst_ROSOnUbuntu</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -541,61 +577,101 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <script src="https://giscus.app/client.js" data-repo="daniel-udekwe/daniel-udekwe.github.io" data-repo-id="R_kgDOLcrcNQ" data-category="Announcements" data-category-id="DIC_kwDOLcrcNc4CdxfP" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="en" crossorigin="anonymous" data-loading="lazy" async="">
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Teleoperating a Husky UGV &amp; Kinova Gen3 arm with VR "</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Daniel A. Udekwe"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2024-03-12"</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [data, code, analysis]</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">title-block-banner:</span><span class="co"> true</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu"># Background</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>The agricultural industry is undergoing a technological revolution driven by automation and robotics. With the rising demand for efficient and sustainable farming practices, there is a growing need for advanced solutions that can address challenges such as labor shortages, increasing production demands, and resource optimization. In this context, the integration of robotics and virtual reality (VR) technologies presents a promising avenue for enhancing agricultural operations.</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>The project focuses on the development and implementation of a cutting-edge system that combines a Husky Unmanned Ground Vehicle (UGV) and a Kinova Gen3 robotic arm, controlled through immersive virtual reality interfaces. The Husky UGV, renowned for its ruggedness, versatility, and mobility, serves as the mobile platform for navigating through agricultural environments, while the Kinova Gen3 arm provides dexterity and precision for performing various tasks such as fruit harvesting and crop inspection.</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>The utilization of virtual reality technology enables operators to teleoperate the Husky UGV and manipulate the Kinova Gen3 arm from a remote location with an unprecedented level of immersion and control. By donning VR headsets and motion-tracking controllers, operators can visualize the agricultural environment in real-time, interact with the robotic system, and execute complex maneuvers with intuitive gestures.</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>Key Objectives:</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>**Enhanced Mobility and Manipulation**: The integration of the Husky UGV and Kinova Gen3 arm aims to provide a versatile platform capable of navigating challenging terrain and performing intricate tasks with agility and precision. By combining mobility with manipulation capabilities, the system can effectively adapt to diverse agricultural environments and address a wide range of tasks, including fruit harvesting, crop monitoring, and precision spraying.</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>**Improved Efficiency and Productivity**: By automating labor-intensive tasks and reducing reliance on manual labor, the proposed system seeks to enhance operational efficiency and productivity in agricultural operations. The seamless integration of robotics and VR technology enables operators to remotely supervise and control the robotic system with enhanced situational awareness, leading to optimized workflows and resource utilization.</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>**Minimized Environmental Impact**: With a focus on sustainability, the project aims to minimize the environmental impact of agricultural practices by promoting precision agriculture and targeted interventions. By leveraging robotics for precise task execution and data collection, farmers can optimize inputs such as water, fertilizers, and pesticides, thereby reducing waste and minimizing environmental degradation.</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>**Scalability and Adaptability**: The developed system is designed to be scalable and adaptable to different agricultural settings and tasks. Whether deployed in orchards, vineyards, or open fields, the modular architecture of the system allows for easy customization and integration of additional sensors or peripherals to meet specific requirements and challenges encountered in various agricultural contexts.</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>Overall, the project seeks to demonstrate the feasibility and potential of teleoperating a Husky UGV and Kinova Gen3 arm with VR technology for agricultural applications, paving the way for the adoption of advanced robotics solutions to address the evolving needs of the agricultural industry. Through collaboration with stakeholders and field trials in real-world agricultural settings, the project aims to validate the effectiveness, reliability, and economic viability of the proposed system, ultimately contributing to the advancement of sustainable and efficient farming practices.</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="fu"># System Design</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="al">![](HRI.png)</span>{fig-align="center"}</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>**Windows PC running Unity Engine:**</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    The Windows PC serves as the central computing unit responsible for running the Unity Engine, a powerful and versatile game development platform. Unity provides the framework for creating immersive virtual reality experiences and interfaces for controlling the robotic system. It handles tasks such as rendering 3D environments, managing input from VR controllers and headsets, and interfacing with other components of the system.</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>**HTC Vive VR Controllers, Headset, and Motion Tracking Devices:**</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    The HTC Vive VR system consists of handheld controllers, a high-resolution headset, and motion tracking devices known as base stations. The controllers allow users to interact with virtual objects and environments with natural hand movements and gestures. The headset provides a fully immersive VR experience, transporting users to virtual agricultural environments in real-time. The motion tracking devices ensure accurate spatial tracking, enabling seamless integration of physical and virtual spaces.</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>**Linux Machine running ROS (Robot Operating System):**</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    The Linux machine serves as the primary control system for the robotic components, running the Robot Operating System (ROS). ROS is a flexible framework for building robotic systems, offering tools and libraries for managing hardware abstraction, communication between components, and high-level functionality such as navigation and manipulation. It provides the infrastructure for interfacing with sensors, controlling actuators, and orchestrating complex behaviors within the robotic system.</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>**Husky UGV (Unmanned Ground Vehicle):**</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>    The Husky UGV is a rugged and versatile mobile platform designed for outdoor environments. Equipped with all-terrain wheels, robust suspension, and powerful motors, the Husky UGV can navigate challenging terrain with ease. It serves as the base platform for transporting the Kinova Gen3 arm and the RealSense camera to various locations within agricultural settings, enabling remote operation and task execution.</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">5.  </span>**Kinova Gen3 Arm:**</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    The Kinova Gen3 arm is a state-of-the-art robotic manipulator renowned for its dexterity, precision, and versatility. Featuring multiple degrees of freedom, advanced joint designs, and integrated sensors, the Gen3 arm is capable of performing a wide range of manipulation tasks with exceptional accuracy and efficiency. It serves as the primary tool for tasks such as fruit harvesting, crop inspection, and precision spraying within agricultural environments.</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">6.  </span>**RealSense Camera:**</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    The RealSense camera is a depth-sensing RGB-D camera developed by Intel. It provides depth perception and spatial awareness, allowing the robotic system to perceive and interact with its surroundings in three dimensions. The RealSense camera serves as a vital sensory component for tasks such as obstacle avoidance, object recognition, and environmental mapping within agricultural environments, enhancing the autonomy and intelligence of the robotic system.</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>Together, these components form an integrated system for teleoperating a Husky UGV and Kinova Gen3 arm with VR technology, enabling immersive control and execution of agricultural tasks such as fruit harvesting and crop inspection with enhanced efficiency, precision, and adaptability.</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="al">![](robot.JPG)</span>{fig-align="center" width="60%"}</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="fu"># To Be Continued ...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Teleoperating a Husky UGV &amp; Kinova Gen3 arm with VR "</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Daniel A. Udekwe"</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2024-03-12"</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [data, code, analysis]</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="an">title-block-banner:</span><span class="co"> true</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="fu"># Background</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>The agricultural industry is undergoing a technological revolution driven by automation and robotics. With the rising demand for efficient and sustainable farming practices, there is a growing need for advanced solutions that can address challenges such as labor shortages, increasing production demands, and resource optimization. In this context, the integration of robotics and virtual reality (VR) technologies presents a promising avenue for enhancing agricultural operations.</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>The project focuses on the development and implementation of a cutting-edge system that combines a Husky Unmanned Ground Vehicle (UGV) and a Kinova Gen3 robotic arm, controlled through immersive virtual reality interfaces. The Husky UGV, renowned for its ruggedness, versatility, and mobility, serves as the mobile platform for navigating through agricultural environments, while the Kinova Gen3 arm provides dexterity and precision for performing various tasks such as fruit harvesting and crop inspection.</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="fu"># System Design</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="al">![](HRI.png)</span>{fig-align="center"}</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Components</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>**Windows PC running Unity Engine:** The Windows PC serves as the central computing unit responsible for running the Unity Engine, a powerful and versatile game development platform.</span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>**HTC Vive VR Controllers, Headset, and Motion Tracking Devices:** The HTC Vive VR system consists of handheld controllers, a high-resolution headset, and motion tracking devices known as base stations.</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>**Linux Machine running ROS (Robot Operating System):** The Linux machine serves as the primary control system for the robotic components, running the Robot Operating System (ROS).</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>**Husky UGV (Unmanned Ground Vehicle):** The Husky UGV is a rugged and versatile mobile platform designed for outdoor environments.</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a><span class="ss">5.  </span>**Kinova Gen3 Arm:** The Kinova Gen3 arm is a state-of-the-art robotic manipulator renowned for its dexterity, precision, and versatility.</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a><span class="ss">6.  </span>**RealSense Camera:** The RealSense camera is a depth-sensing RGB-D camera developed by Intel. It provides depth perception and spatial awareness, allowing the robotic system to perceive and interact with its surroundings in three dimensions.</span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>Together, these components form an integrated system for teleoperating a Husky UGV and Kinova Gen3 arm with VR technology, enabling immersive control and execution of agricultural tasks such as fruit harvesting and crop inspection with enhanced efficiency, precision, and adaptability.</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a><span class="al">![](robot.JPG)</span>{fig-align="center" width="60%"}</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a><span class="fu"># System Development</span></span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Install ROS</span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>    The following instructions found on this link<span class="ot">[^1]</span> can be used to install ROS Noetic on Ubuntu 20.04</span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>    <span class="in">``` bash</span></span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>    <span class="fu">wget</span> <span class="at">-c</span> https://raw.githubusercontent.com/qboticslabs/ros_install_noetic/master/ros_install_noetic.sh <span class="kw">&amp;&amp;</span> <span class="fu">chmod</span> +x ./ros_install_noetic.sh <span class="kw">&amp;&amp;</span> <span class="ex">./ros_install_noetic.sh</span></span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>Install ROS#</span>
+<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a>    ROS# provides Rosbridge server<span class="ot">[^2]</span> which offers a web-socket connection. This connection will eventually serve as a bridge between the local and remote work spaces.</span>
+<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a>    <span class="in">``` bash</span></span>
+<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a>    <span class="ex">$</span> sudo apt-get install ros-noetic-rosbridge-server</span>
+<span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
+<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>Setup Kinova and Realsense ROS nodes.</span>
+<span id="cb7-56"><a href="#cb7-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-57"><a href="#cb7-57" aria-hidden="true" tabindex="-1"></a>    Clone this repository into catkin workspace</span>
+<span id="cb7-58"><a href="#cb7-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-59"><a href="#cb7-59" aria-hidden="true" tabindex="-1"></a>    <span class="in">``` bash</span></span>
+<span id="cb7-60"><a href="#cb7-60" aria-hidden="true" tabindex="-1"></a>    <span class="ex">$</span> git clone https://github.com/daniel-udekwe/ROS_HUSKYKINOVA_ws.git</span>
+<span id="cb7-61"><a href="#cb7-61" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
+<span id="cb7-62"><a href="#cb7-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-63"><a href="#cb7-63" aria-hidden="true" tabindex="-1"></a><span class="ot">[^1]: &lt;https://wiki.ros.org/ROS/Installation/TwoLineInstall/&gt;</span></span>
+<span id="cb7-64"><a href="#cb7-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-65"><a href="#cb7-65" aria-hidden="true" tabindex="-1"></a><span class="ot">[^2]: &lt;https://github.com/siemens/ros-sharp/wiki/User_Inst_ROSOnUbuntu&gt;</span></span>
+<span id="cb7-66"><a href="#cb7-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-67"><a href="#cb7-67" aria-hidden="true" tabindex="-1"></a>These steps complete the procedure for setting up the linux computer on the remote workspace. Now to the windows computer on the local workspace</span>
+<span id="cb7-68"><a href="#cb7-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-69"><a href="#cb7-69" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>Download Unity Hub and install Unity 2021.3.16f1</span>
+<span id="cb7-70"><a href="#cb7-70" aria-hidden="true" tabindex="-1"></a><span class="ss">5.  </span>Download the project on <span class="co">[</span><span class="ot">this link</span><span class="co">](https://github.com/daniel-udekwe/Unity_HUSKYKINOVA/archive/refs/heads/master.zip)</span>, unzip it then open it in unity</span>
+<span id="cb7-71"><a href="#cb7-71" aria-hidden="true" tabindex="-1"></a><span class="ss">6.  </span>Locate and open Assets/Scenes/SampleScene.unity</span>
+<span id="cb7-72"><a href="#cb7-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-73"><a href="#cb7-73" aria-hidden="true" tabindex="-1"></a>This completes the setup of the remote and local workspaces. The next steps will involve starting and using the system to teleoperate the UGV and arm</span>
+<span id="cb7-74"><a href="#cb7-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-75"><a href="#cb7-75" aria-hidden="true" tabindex="-1"></a><span class="fu"># Tele-operating the arm and UGV</span></span>
+<span id="cb7-76"><a href="#cb7-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-77"><a href="#cb7-77" aria-hidden="true" tabindex="-1"></a>On the linux computer enter the following commands;</span>
+<span id="cb7-78"><a href="#cb7-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-79"><a href="#cb7-79" aria-hidden="true" tabindex="-1"></a><span class="in">``` bash</span></span>
+<span id="cb7-80"><a href="#cb7-80" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ws_daniel</span>
+<span id="cb7-81"><a href="#cb7-81" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-82"><a href="#cb7-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-83"><a href="#cb7-83" aria-hidden="true" tabindex="-1"></a><span class="in">``` bash</span></span>
+<span id="cb7-84"><a href="#cb7-84" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> devel/setup.bash</span>
+<span id="cb7-85"><a href="#cb7-85" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-86"><a href="#cb7-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-87"><a href="#cb7-87" aria-hidden="true" tabindex="-1"></a><span class="in">``` bash</span></span>
+<span id="cb7-88"><a href="#cb7-88" aria-hidden="true" tabindex="-1"></a><span class="ex">roslaunch</span> kinova_ar kinovaAR.launch</span>
+<span id="cb7-89"><a href="#cb7-89" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-90"><a href="#cb7-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-91"><a href="#cb7-91" aria-hidden="true" tabindex="-1"></a>These commands starts the rosbridge server on the linux computer, initializes the Kinova and Realsense nodes.</span>
+<span id="cb7-92"><a href="#cb7-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-93"><a href="#cb7-93" aria-hidden="true" tabindex="-1"></a>On the Windows PC of the local workspace, start the project, ensure that correct IP address is entered in the ROS connectors. Control the arm and UGV with the VR controllers.</span>
+<span id="cb7-94"><a href="#cb7-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-95"><a href="#cb7-95" aria-hidden="true" tabindex="-1"></a><span class="fu"># To Be Continued ...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
