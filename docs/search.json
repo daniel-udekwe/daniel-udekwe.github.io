@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Daniel Udekwe",
+    "section": "",
+    "text": "I’m a computational epidemiologist and data scientist working at the intersection of AI/ML, computational dynamics and public health. I am the author of Computational Modeling of Infectious Disease, a richly illustrated compendium on modern computational epidemiology, as well as a growing body of research.\nI attended the University of Oxford for my undergraduate studies, graduating with a distinction (1st class), and returned there for my graduate studies. I also hold degrees from Cardiff and Robert Gordon University Aberdeen, and have studied at the University of Leiden under an Erasmus programme. Today, I am board certified in public health, a Fellow of the Royal Society for Public Health and a member of several other learned societies. I have also been elected a Senior Member of IEEE, where I am a member of the EMBS Technical Committee on Standards and the EMBS Technical Committee on Biomedical and Health Informatics.\nI am currently a Practice Director for Biomedical AI/ML for HCLTech, where I advise the world’s leading life sciences, medical devices and pharma companies on how to leverage AI/ML to improve their products and serve their customers better. I am also a visiting thesis supervisor for students on the data science track of the mathematics programme at the Budapest University of Technology and Economics.\nAs part of my service to the profession, I’ve been a reviewer for JOSS, Frontiers in Immunology and Frontiers in Medicine. Between 2022 and 2023, I served Virginia as a member of the Medical Reserve Corps, and currently serve in both the Rocky Mountain MRC of Denver and Colorado’s radiation response MRC. I was also part of the COVID-19 Healthcare Coalition and the Covid Tracking Project.\nYou can find a list of my publications here. My work on COVID-19 has been featured in the media. I also write on various topics as the fancy strikes – you can peruse my notebook here."
+  },
+  {
+    "objectID": "index.html#bio",
+    "href": "index.html#bio",
+    "title": "Daniel Udekwe",
+    "section": "",
+    "text": "I’m a computational epidemiologist and data scientist working at the intersection of AI/ML, computational dynamics and public health. I am the author of Computational Modeling of Infectious Disease, a richly illustrated compendium on modern computational epidemiology, as well as a growing body of research.\nI attended the University of Oxford for my undergraduate studies, graduating with a distinction (1st class), and returned there for my graduate studies. I also hold degrees from Cardiff and Robert Gordon University Aberdeen, and have studied at the University of Leiden under an Erasmus programme. Today, I am board certified in public health, a Fellow of the Royal Society for Public Health and a member of several other learned societies. I have also been elected a Senior Member of IEEE, where I am a member of the EMBS Technical Committee on Standards and the EMBS Technical Committee on Biomedical and Health Informatics.\nI am currently a Practice Director for Biomedical AI/ML for HCLTech, where I advise the world’s leading life sciences, medical devices and pharma companies on how to leverage AI/ML to improve their products and serve their customers better. I am also a visiting thesis supervisor for students on the data science track of the mathematics programme at the Budapest University of Technology and Economics.\nAs part of my service to the profession, I’ve been a reviewer for JOSS, Frontiers in Immunology and Frontiers in Medicine. Between 2022 and 2023, I served Virginia as a member of the Medical Reserve Corps, and currently serve in both the Rocky Mountain MRC of Denver and Colorado’s radiation response MRC. I was also part of the COVID-19 Healthcare Coalition and the Covid Tracking Project.\nYou can find a list of my publications here. My work on COVID-19 has been featured in the media. I also write on various topics as the fancy strikes – you can peruse my notebook here."
+  },
+  {
+    "objectID": "index.html#key-research-interests",
+    "href": "index.html#key-research-interests",
+    "title": "Daniel Udekwe",
+    "section": "Key research interests",
+    "text": "Key research interests\n\nComputational epidemiology: agent-based modelling, disease-avoidant behaviours, epidemics over dynamic networks, geospatial computational epidemiology – all primarily in the context of infectious diseases\nPharmacovigilance: VAERS, passive reporting, text mining of large complex report sets using LLMs\nComputational dynamics: computational dynamics of complex systems, computational dynamics of infectious diseases, computational dynamics of social systems\nPublic health: evidence-based public health policy, public health ethics, public health law, quality and systems improvement in public health"
+  },
+  {
+    "objectID": "index.html#teaching",
+    "href": "index.html#teaching",
+    "title": "Daniel Udekwe",
+    "section": "Teaching",
+    "text": "Teaching\nI am a visiting thesis supervisor for students on the data science track of the mathematics programme at the Budapest University of Technology and Economics - you can read more about this here.\nFrom time to time, I get invited to give talks and lectures. My capacity for this is somewhat limited due to other commitments, but if you are interested in having me speak at your event, please get in touch."
+  },
+  {
+    "objectID": "index.html#selected-papers",
+    "href": "index.html#selected-papers",
+    "title": "Daniel Udekwe",
+    "section": "Selected papers",
+    "text": "Selected papers\nTocilizumab in addition to standard of care in the management of COVID-19: A meta-analysis of RCTs. Mutua V, Henry BM, von Csefalvay, C, Cheruiyot I, Vikse J, Lippi G, Bundi B, Mong’are N. Acta Biomed. 2022, 93(1):e2022014. doi: 10.23750/abm.v93i1.12208.\nJAMPI: Efficient matrix multiplication in Spark using barrier execution mode. Foldi T, von Csefalvay C, Perez NA. BDCC 2020, 4(4):32. doi: 10.3390/bdcc4040032.\nVAERS data reveals no increased risk of neuroautoimmune adverse events from COVID- vaccines. von Csefalvay, C. medRxiv 2021. doi: 10.1101/2021.06.13.21258851.\nTuberculous polyserositis in endemic areas with an emphasis on empiric therapy: A case report. Munguti J, Mutua V, Cheruiyot I, von Csefalvay C, Opare-Addo P, Kiko N, Wanjiru R. Medicine: Case Reports. 2022, 3(4):e0221. doi: 10.1097/MD9.0000000000000221.\nSee more here."
+  },
+  {
+    "objectID": "index.html#professional-affiliations",
+    "href": "index.html#professional-affiliations",
+    "title": "Daniel Udekwe",
+    "section": "Professional affiliations",
+    "text": "Professional affiliations\nThe OR Society | Member since 2020\nRoyal Society for Public Health | Fellow since 2021\nTOPRA | Registered Member since 2021\nAmerican Public Health Association | Member since 2021\nIEEE | Senior Member since 2024"
+  },
+  {
+    "objectID": "index.html#personal-life",
+    "href": "index.html#personal-life",
+    "title": "Daniel Udekwe",
+    "section": "Personal life",
+    "text": "Personal life\nI live in Denver, CO, with my Golden Retriever, Oliver. Born in Budapest, Hungary, I’ve spent my formative years in England, but have called the Netherlands, Germany, Belgium, Austria and the United States home at various points in my life. Since 2020, I’ve been living in the United States, where I am a permanent resident.\nIn my free time, I enjoy reading (mostly Cold War history and classical Greek drama), cooking (with not a lot of success) and Renaissance polyphony (esp. Thomas Tallis and Orlando di Lasso). I’m credited for a somewhat pretty sequence of integers called Jellyfish Heart numbers (OEIS A344856), which I discovered in 2020 while doing something that has nothing at all to do with my day job.\nI live with neuromyelitis optica since 2015, which has left me with a lifelong desire to understand complex, multicausal health conditions like NMOSD better.\nIn what little is left of my free time, I’m an adaptive multisport athlete, competing in wheelchair rugby, adaptive rowing (category PR1) and the SkiErg (category SIT2). In the latter, I currently hold the world records for 100m, 500m, 1,000m, 2,000m, 6,000m, 10,000m, 21,097m and 42,195m distances and the 60 minutes time. I occasionally rant and whine about my forays in the world of adaptive exercise and my attempts at doing so in a mostly science-based manner."
+  },
+  {
+    "objectID": "index.html#pronunciation-guide",
+    "href": "index.html#pronunciation-guide",
+    "title": "Daniel Udekwe",
+    "section": "Pronunciation guide",
+    "text": "Pronunciation guide\nMy last name rhymes with Chick-Fil-A."
+  }
+]
