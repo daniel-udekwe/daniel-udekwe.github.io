@@ -1,0 +1,15 @@
+{
+  "hash": "3d265df6ca3033e332c3d51be8c8520b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: <br> <br> <br> <br> \nexcerpt: My current CV\nexecute:\n  freeze: true  # never re-render during project render\nengine: knitr \nlisting:\n  contents: projects\n  sort: \"date desc\"\n  type: default\n  categories: true\n  sort-ui: false\n  filter-ui: false\n # page-size: 2\n#page-layout: full\n#title-block-banner: true\n---\n\n\n\n\n------------------------------------------------------------------------\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

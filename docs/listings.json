@@ -1,0 +1,19 @@
+[
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/Second Project/index.html",
+      "/projects/First Project/index.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/First Blog Post/index.html",
+      "/posts/Fourth Blog Post/index.html",
+      "/posts/Second Blog Post/index.html",
+      "/posts/Fifth Blog Post/index.html",
+      "/posts/Third Blog Post/index.html"
+    ]
+  }
+]

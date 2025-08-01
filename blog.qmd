@@ -1,0 +1,27 @@
+---
+#title: "Blog"
+#title: <br><br>
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  page-size: 2
+page-layout: full
+title-block-banner: true
+mainfont: Comic Sans Ms
+---
+
+Welcome to my Machine Learning Explorations blog, where we embark on a journey through the intricate realms of artificial intelligence. Dive into the fascinating world of clustering, where data patterns converge to reveal hidden insights, or venture into the realm of classification, where algorithms discern and categorize information with remarkable precision. Explore the nuanced landscapes of nonlinear and linear regression, where mathematical models unfurl the relationships between variables. Delve into the probabilistic terrain, where randomness intertwines with predictability, and unravel the mysteries of random variables. Join us in deciphering anomalies and outliers, as we navigate the ever-evolving landscape of anomaly detection. Whether you're a seasoned data scientist or a curious enthusiast, our blog is your gateway to unraveling the complexities of machine learning, one post at a time.
+
+This blog acknowledges the use of ChatGPT[^1] for ascertaining grammatical correctness in all posts.
+
+[^1]: <https://chat.openai.com/>
+
+![](img/ML.png){fig-align="center" width="75%"}
+
+# Machine Learning Blog Posts
+
+------------------------------------------------------------------------

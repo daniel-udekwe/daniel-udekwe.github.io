@@ -4,5 +4,35 @@
   },
   "about.qmd": {
     "about.html": "dc970f54"
+  },
+  "projects.qmd": {
+    "projects.html": "847cdbcc"
+  },
+  "blog.qmd": {
+    "blog.html": "cba73806"
+  },
+  "projects/Second Project/index.qmd": {
+    "index.html": "2f073540"
+  },
+  "projects/First Project/index.qmd": {
+    "index.html": "8967705d"
+  },
+  "posts/Fourth Blog Post/index.qmd": {
+    "index.html": "f82b67f2"
+  },
+  "posts/Second Blog Post/index.qmd": {
+    "index.html": "db34e7c1"
+  },
+  "posts/First Blog Post/index.qmd": {
+    "index.html": "0a31a85e"
+  },
+  "posts/Fifth Blog Post/index.qmd": {
+    "index.html": "6c0eead0"
+  },
+  "posts/Third Blog Post/index.qmd": {
+    "index.html": "94e90580"
+  },
+  "cv.qmd": {
+    "cv.html": "a395ec7c"
   }
 }
