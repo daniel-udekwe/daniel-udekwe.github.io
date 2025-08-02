@@ -4,21 +4,21 @@
     "href": "index.html",
     "title": "Daniel Udekwe",
     "section": "",
-    "text": "I am currently a doctoral candidate at Florida State University, where I develop quantum-inspired optimization models, immersive VR simulation environments, and machine learning pipelines to address complex transportation challenges. Prior to this, I held similar research roles at Virginia Tech’s Intelligent Automation and Connected Technologies Lab.\nI am the author of several peer-reviewed articles, and my work has been featured in both academic and applied engineering contexts.\nIn addition to my academic research, I am an advocate for immersive learning technologies and AI-enabled infrastructure.\nMy technical toolkit includes Python, MATLAB, ROS, Unity3D, and Qiskit, among others. I actively contribute to interdisciplinary research communities and am committed to translating advanced computational models into practical tools that enhance safety, mobility, and equity in transportation systems."
+    "text": "I am currently a doctoral candidate at Florida State University, where I develop quantum-inspired optimization models, immersive VR simulation environments, and machine learning pipelines to address complex transportation challenges. Prior to this, I held similar research roles at Virginia Tech’s Intelligent Automation and Connected Technologies Lab.\nI am the author of several peer-reviewed articles, and my work has been featured in both academic and applied engineering contexts.\nI actively contribute to interdisciplinary research communities and am committed to translating advanced computational models into practical tools that enhance safety, mobility, and equity in transportation systems.\nIn addition to my academic research, I am an advocate for remote immersive learning technologies and the integration of virtual reality into collaborative professional environments."
   },
   {
     "objectID": "index.html#bio",
     "href": "index.html#bio",
     "title": "Daniel Udekwe",
     "section": "",
-    "text": "I am currently a doctoral candidate at Florida State University, where I develop quantum-inspired optimization models, immersive VR simulation environments, and machine learning pipelines to address complex transportation challenges. Prior to this, I held similar research roles at Virginia Tech’s Intelligent Automation and Connected Technologies Lab.\nI am the author of several peer-reviewed articles, and my work has been featured in both academic and applied engineering contexts.\nIn addition to my academic research, I am an advocate for immersive learning technologies and AI-enabled infrastructure.\nMy technical toolkit includes Python, MATLAB, ROS, Unity3D, and Qiskit, among others. I actively contribute to interdisciplinary research communities and am committed to translating advanced computational models into practical tools that enhance safety, mobility, and equity in transportation systems."
+    "text": "I am currently a doctoral candidate at Florida State University, where I develop quantum-inspired optimization models, immersive VR simulation environments, and machine learning pipelines to address complex transportation challenges. Prior to this, I held similar research roles at Virginia Tech’s Intelligent Automation and Connected Technologies Lab.\nI am the author of several peer-reviewed articles, and my work has been featured in both academic and applied engineering contexts.\nI actively contribute to interdisciplinary research communities and am committed to translating advanced computational models into practical tools that enhance safety, mobility, and equity in transportation systems.\nIn addition to my academic research, I am an advocate for remote immersive learning technologies and the integration of virtual reality into collaborative professional environments."
   },
   {
     "objectID": "index.html#key-research-interests",
     "href": "index.html#key-research-interests",
     "title": "Daniel Udekwe",
     "section": "Key research interests",
-    "text": "Key research interests\n\nVirtual/Augmented/Mixed/Extended Reality: Development and application of immersive technologies for simulation, training, and remote collaboration in civil and transportation engineering.\nQuantum Computing: Leveraging quantum algorithms for solving complex optimization problems in transportation networks and intelligent systems.\nComputational Intelligence: Application of neural networks, evolutionary algorithms, and fuzzy systems for modeling, prediction, and decision support in engineering systems.\nControl/Autonomous Systems: Design and analysis of autonomous agents and control strategies for unmanned vehicles and intelligent infrastructure.\nHuman-Machine/Human-Robot Interaction: Enhancing interactive systems for teleoperation, assistive robotics, and collaborative decision-making through intuitive and accessible interfaces."
+    "text": "Key research interests\n\nQuantum Computing: Developing quantum-inspired optimization frameworks and algorithms to address complex engineering problems.\nVirtual/Augmented/Mixed/Extended Reality: Leveraging immersive virtual environments and XR technologies to facilitate interactive simulation, particularly to improve spatial reasoning.\nHuman-Machine/Human-Robot Interaction: Exploring advanced collaborative frameworks between humans and robotic systems for improving safety, efficiency, and effectiveness in complex operational tasks.\nComputational Intelligence: Employing machine learning, deep reinforcement learning, and explainable AI techniques to analyze datasets and reveal hidden patterns.\nControl/Autonomous Systems: Developing robust control frameworks for autonomous vehicles, drones, and robotic platforms for autonomous decision-making capabilities."
   },
   {
     "objectID": "index.html#teaching",
@@ -67,14 +67,14 @@
     "href": "index.html#education",
     "title": "Daniel Udekwe",
     "section": "Education",
-    "text": "Education\nDoctor of Philosophy (PhD): Civil Engineering  Florida State University (FSU) (2024 - present)\nMaster of Science (MSc): Aerospace Vehicle Design  Air Force Institute of Technology, NG\nMaster of Science (MSc): Control Engineering  Ahmadu Bello University, NG\nBachelor of Engineering (B.Eng): Electrical Engineering  Ahmadu Bello University, NG"
+    "text": "Education\nDoctor of Philosophy (PhD): Civil Engineering  Florida State University (FSU) (2024 - present)\nMaster of Science (MSc): Aerospace Vehicle Design  Air Force Institute of Technology, NGA\nMaster of Science (MSc): Control Engineering  Ahmadu Bello University, NGA\nBachelor of Engineering (B.Eng): Electrical Engineering  Ahmadu Bello University, NGA"
   },
   {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "My Projects",
     "section": "",
-    "text": "My Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTeleoperating a Husky UGV & Kinova Gen3 arm with VR\n\n\n\n\n\n\ndata\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 12, 2024\n\n\nDaniel A. Udekwe\n\n\n\n\n\n\n\n\n\n\n\n\nMethane Emission Measurement Project\n\n\n\n\n\n\ndata\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 12, 2024\n\n\nDaniel A. Udekwe\n\n\n\n\n\n\nNo matching items"
+    "text": "My Projects\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVR-Based Control System for a Husky UGV and Kinova Gen3 Robotic Arm\n\n\n\n\n\n\ndata\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 12, 2024\n\n\nDaniel A. Udekwe\n\n\n\n\n\n\n\n\n\n\n\n\nReal-Time Methane Emission Tracking in Livestock Using Embedded IoT Sensors\n\n\n\n\n\n\ndata\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 12, 2024\n\n\nDaniel A. Udekwe\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog.html",
@@ -93,35 +93,35 @@
   {
     "objectID": "projects/Second Project/index.html",
     "href": "projects/Second Project/index.html",
-    "title": "Teleoperating a Husky UGV & Kinova Gen3 arm with VR",
+    "title": "VR-Based Control System for a Husky UGV and Kinova Gen3 Robotic Arm",
     "section": "",
     "text": "The agricultural industry is undergoing a technological revolution driven by automation and robotics. With the rising demand for efficient and sustainable farming practices, there is a growing need for advanced solutions that can address challenges such as labor shortages, increasing production demands, and resource optimization. In this context, the integration of robotics and virtual reality (VR) technologies presents a promising avenue for enhancing agricultural operations.\nThe project focuses on the development and implementation of a cutting-edge system that combines a Husky Unmanned Ground Vehicle (UGV) and a Kinova Gen3 robotic arm, controlled through immersive virtual reality interfaces. The Husky UGV, renowned for its ruggedness, versatility, and mobility, serves as the mobile platform for navigating through agricultural environments, while the Kinova Gen3 arm provides dexterity and precision for performing various tasks such as fruit harvesting and crop inspection."
   },
   {
     "objectID": "projects/Second Project/index.html#components",
     "href": "projects/Second Project/index.html#components",
-    "title": "Teleoperating a Husky UGV & Kinova Gen3 arm with VR",
+    "title": "VR-Based Control System for a Husky UGV and Kinova Gen3 Robotic Arm",
     "section": "Components",
     "text": "Components\n\nWindows PC running Unity Engine: The Windows PC serves as the central computing unit responsible for running the Unity Engine, a powerful and versatile game development platform.\nHTC Vive VR Controllers, Headset, and Motion Tracking Devices: The HTC Vive VR system consists of handheld controllers, a high-resolution headset, and motion tracking devices known as base stations.\nLinux Machine running ROS (Robot Operating System): The Linux machine serves as the primary control system for the robotic components, running the Robot Operating System (ROS).\nHusky UGV (Unmanned Ground Vehicle): The Husky UGV is a rugged and versatile mobile platform designed for outdoor environments.\nKinova Gen3 Arm: The Kinova Gen3 arm is a state-of-the-art robotic manipulator renowned for its dexterity, precision, and versatility.\nRealSense Camera: The RealSense camera is a depth-sensing RGB-D camera developed by Intel. It provides depth perception and spatial awareness, allowing the robotic system to perceive and interact with its surroundings in three dimensions.\n\nTogether, these components form an integrated system for teleoperating a Husky UGV and Kinova Gen3 arm with VR technology, enabling immersive control and execution of agricultural tasks such as fruit harvesting and crop inspection with enhanced efficiency, precision, and adaptability."
   },
   {
     "objectID": "projects/Second Project/index.html#footnotes",
     "href": "projects/Second Project/index.html#footnotes",
-    "title": "Teleoperating a Husky UGV & Kinova Gen3 arm with VR",
+    "title": "VR-Based Control System for a Husky UGV and Kinova Gen3 Robotic Arm",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nhttps://wiki.ros.org/ROS/Installation/TwoLineInstall/↩︎\nhttps://github.com/siemens/ros-sharp/wiki/User_Inst_ROSOnUbuntu↩︎"
   },
   {
     "objectID": "projects/First Project/index.html",
     "href": "projects/First Project/index.html",
-    "title": "Methane Emission Measurement Project",
+    "title": "Real-Time Methane Emission Tracking in Livestock Using Embedded IoT Sensors",
     "section": "",
     "text": "Livestock farming, particularly the dairy and beef industries, plays a significant role in global agricultural economies, providing essential food products and livelihoods for millions worldwide. However, one of the most pressing challenges associated with this industry is the environmental impact of methane emissions from cattle. Methane, a potent greenhouse gas, contributes significantly to climate change, with livestock farming being a major source of its emission.\nAddressing this challenge requires innovative solutions that not only minimize environmental harm but also ensure sustainable agricultural practices. In this context, the integration of embedded systems onto cattle harnesses presents a promising avenue for monitoring and mitigating methane emissions directly at the source.\nThis project aims to explore the development and implementation of such embedded systems, designed to accurately measure and analyze methane production in cattle. By harnessing cutting-edge technology, we seek to provide farmers with real-time data insights into their herd’s methane emissions, enabling informed decision-making and targeted interventions to reduce environmental impact.\nThrough a combination of sensor technology, data processing algorithms, and wireless communication capabilities, these embedded systems offer a holistic approach to managing methane emissions from cattle. By collecting continuous, on-farm data, farmers can not only quantify methane output but also identify trends, patterns, and potential mitigation strategies tailored to their specific operation.\nMoreover, by integrating these systems into existing cattle management practices, we aim to facilitate seamless adoption and integration within agricultural workflows. By empowering farmers with actionable information, we aspire to foster a more sustainable and environmentally conscious approach to livestock farming, contributing to global efforts towards mitigating climate change.\nIn this project, we delve into the design, development, and deployment of embedded systems mounted on cattle harnesses, outlining the technical specifications, data collection methodologies, and potential environmental impact assessments. Furthermore, we explore the practical implications and benefits of implementing such technology, both from an agricultural and environmental perspective.\nUltimately, this project seeks to showcase the transformative potential of harnessing innovation to address pressing environmental challenges, paving the way for a more sustainable future for livestock farming while simultaneously reducing its carbon footprint."
   },
   {
     "objectID": "projects/First Project/index.html#footnotes",
     "href": "projects/First Project/index.html#footnotes",
-    "title": "Methane Emission Measurement Project",
+    "title": "Real-Time Methane Emission Tracking in Livestock Using Embedded IoT Sensors",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nhttps://www.autodesk.com/products/eagle/overview?term=1-YEAR&tab=subscription↩︎\nhttps://www.amazon.com/Genmitsu-3018-PRO-Control-Engraving-300x180x45mm/dp/B07P6K9BL3/ref=sr_1_2?crid=ABP8AW6UFFJZ&dib=eyJ2IjoiMSJ9.RQe4Zy_YwT7FX77Pi84YHfpnpPzLOXpRzN6afBecVLyxXE375zZGGxcMFCqg1zuVU2RDn4lQFy3fNWO8GgK-B6041GOOirkfZasJF5fktYwDA48EtPQdgr7r21HFIT4yeUyl_6afOFq6e9Z0DV9mQH8jQSo6__Vdkev8yUM3k_4kvLTqFyVCIWfkgCxYgDe7FkkZ_rKe8yOu905LsJvw3E_7xLHDC6dm3XdL9UZ5ZnQglBcg4ElKnvg8UZ85HoJHRiKrxdO7aeOleZcKXH76VVnJH7C3RG4yqOwnM-GLg3Q.tlKlfveEvYPqQKrLehs1bphEMdOdVaPrjo9N1SxkjXE&dib_tag=se&keywords=pcb%2Bmachine&qid=1710270710&sprefix=pcb%2Bmachine%2Caps%2C96&sr=8-2&th=1↩︎\nhttp://flatcam.org/download↩︎"
   },
@@ -296,7 +296,7 @@
   {
     "objectID": "cv.html",
     "href": "cv.html",
-    "title": "Daniel Udekwe",
+    "title": "",
     "section": "",
     "text": "Download current CV"
   }

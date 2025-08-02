@@ -1,9 +1,10 @@
 ---
-title: "Methane Emission Measurement Project"
+title: "Real-Time Methane Emission Tracking in Livestock Using Embedded IoT Sensors"
 author: "Daniel A. Udekwe"
 date: "2024-03-12"
 categories: [data, code, analysis]
 title-block-banner: true
+image: thumbnail.png
 ---
 
 # Background

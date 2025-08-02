@@ -19,18 +19,18 @@ about:
           text: "Email"
           url: mailto:nickudekwe@gmail.com
         - icon: ai google-scholar
-          text: "{{< ai orcid >}} ORCID 0000-0003-3131-0864"
-          url: https://orcid.org/0000-0003-3131-0864
+          text: "{{< ai orcid >}} ORCID 0000-0003-1771-5320"
+          url: https://orcid.org/0000-0003-1771-5320
         - text: "{{< ai google-scholar >}} Google Scholar"
-          url: https://scholar.google.com/citations?user=X_2G-VsAAAAJ
-        - text: "{{< ai viaf >}} VIAF 7190162669581955500004"
-          url: http://viaf.org/viaf/7190162669581955500004
-        - text: "{{< ai isni >}} ISNI 0000 0005 0265 5729"
-          url: https://isni.org/isni/0000000502655729
-        - text: "{{< ai researcherid >}} RID IZD-6900-2023"
-          url: https://www.webofscience.com/wos/author/record/IZD-6900-2023
+          url: https://scholar.google.com/citations?hl=en&user=PkqoFXIAAAAJ&view_op=list_works&sortby=pubdate
+        - text: "{{< ai viaf >}} VIAF 7190162669581955500004x"
+          url: http://viaf.org/viaf/7190162669581955500004x
+        - text: "{{< ai isni >}} ISNI 0000 0005 0265 5729x"
+          url: https://isni.org/isni/0000000502655729x
+        - text: "{{< ai researcherid >}} RID IZD-6900-2023x"
+          url: https://www.webofscience.com/wos/author/record/IZD-6900-2023x
         - text: "{{< ai osf >}} OSF"
-          url: https://osf.io/awhgj
+          url: https://osf.io/awhgjx
 image: img/danny.png
 comments: false
 ---
@@ -41,21 +41,21 @@ I am currently a doctoral candidate at Florida State University, where I develop
 
 I am the author of several peer-reviewed articles, and my work has been featured in both academic and applied engineering contexts.
 
-In addition to my academic research, I am an advocate for immersive learning technologies and AI-enabled infrastructure.
+I actively contribute to interdisciplinary research communities and am committed to translating advanced computational models into practical tools that enhance safety, mobility, and equity in transportation systems.
 
-My technical toolkit includes Python, MATLAB, ROS, Unity3D, and Qiskit, among others. I actively contribute to interdisciplinary research communities and am committed to translating advanced computational models into practical tools that enhance safety, mobility, and equity in transportation systems.
+In addition to my academic research, I am an advocate for remote immersive learning technologies and the integration of virtual reality into collaborative professional environments.
 
 ## Key research interests
 
--   **Virtual/Augmented/Mixed/Extended Reality:** Development and application of immersive technologies for simulation, training, and remote collaboration in civil and transportation engineering.
+-   **Quantum Computing:** Developing quantum-inspired optimization frameworks and algorithms to address complex engineering problems.
 
--   **Quantum Computing:** Leveraging quantum algorithms for solving complex optimization problems in transportation networks and intelligent systems.
+-   **Virtual/Augmented/Mixed/Extended Reality:** Leveraging immersive virtual environments and XR technologies to facilitate interactive simulation, particularly to improve spatial reasoning.
 
--   **Computational Intelligence:** Application of neural networks, evolutionary algorithms, and fuzzy systems for modeling, prediction, and decision support in engineering systems.
+-   **Human-Machine/Human-Robot Interaction:** Exploring advanced collaborative frameworks between humans and robotic systems for improving safety, efficiency, and effectiveness in complex operational tasks.
 
--   **Control/Autonomous Systems:** Design and analysis of autonomous agents and control strategies for unmanned vehicles and intelligent infrastructure.
+-   **Computational Intelligence:** Employing machine learning, deep reinforcement learning, and explainable AI techniques to analyze datasets and reveal hidden patterns.
 
--   **Human-Machine/Human-Robot Interaction:** Enhancing interactive systems for teleoperation, assistive robotics, and collaborative decision-making through intuitive and accessible interfaces.
+-   **Control/Autonomous Systems:** Developing robust control frameworks for autonomous vehicles, drones, and robotic platforms for autonomous decision-making capabilities.
 
 ## Education
 
@@ -63,11 +63,11 @@ My technical toolkit includes Python, MATLAB, ROS, Unity3D, and Qiskit, among ot
 
 Doctor of Philosophy (PhD): Civil Engineering <br> Florida State University (FSU) (2024 - present)
 
-Master of Science (MSc): Aerospace Vehicle Design <br> Air Force Institute of Technology, NG
+Master of Science (MSc): Aerospace Vehicle Design <br> Air Force Institute of Technology, NGA
 
-Master of Science (MSc): Control Engineering <br> Ahmadu Bello University, NG
+Master of Science (MSc): Control Engineering <br> Ahmadu Bello University, NGA
 
-Bachelor of Engineering (B.Eng): Electrical Engineering <br> Ahmadu Bello University, NG
+Bachelor of Engineering (B.Eng): Electrical Engineering <br> Ahmadu Bello University, NGA
 
 </html>
 
@@ -81,7 +81,7 @@ Udekwe, D., Ajayi, O. O., Ubadike, O., Ter, K., & Okafor, E. (2024). **Comparing
 
 Okafor, E., Udekwe, D., Ibrahim, Y., Bashir Mu'azu, M., & Okafor, E. G. (2021). **Heuristic and deep reinforcement learning-based PID control of trajectory tracking in a ball-and-plate system**. *Journal of Information and Telecommunication*, *5*(2), 179-196. <https://doi.org/10.1080/24751839.2020.1833137>
 
-See more [here](papers).
+See more [here](https://scholar.google.com/citations?hl=en&user=PkqoFXIAAAAJ&view_op=list_works&sortby=pubdate).
 
 ## Professional affiliations
 

@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Daniel Udekwe"
+#  title: "Daniel Udekwe"
   navbar:
     left:
       - href: index.qmd

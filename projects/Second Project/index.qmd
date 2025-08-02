@@ -1,9 +1,10 @@
 ---
-title: "Teleoperating a Husky UGV & Kinova Gen3 arm with VR "
+title: "VR-Based Control System for a Husky UGV and Kinova Gen3 Robotic Arm "
 author: "Daniel A. Udekwe"
 date: "2024-03-12"
 categories: [data, code, analysis]
 title-block-banner: true
+image: thumbnail.jpg
 ---
 
 # Background
