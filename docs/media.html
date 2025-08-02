@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>projects</title>
+<title>media</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,12 +30,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -68,65 +65,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -147,7 +86,7 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -155,7 +94,7 @@ window.Quarto = {
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./media.html"> 
+    <a class="nav-link active" href="./media.html" aria-current="page"> 
 <span class="menu-text">Media</span></a>
   </li>  
 </ul>
@@ -172,111 +111,35 @@ window.Quarto = {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
-   
   <ul>
-  <li><a href="#my-projects" id="toc-my-projects" class="nav-link active" data-scroll-target="#my-projects">My Projects</a></li>
+  <li><a href="#to-be-continued" id="toc-to-be-continued" class="nav-link active" data-scroll-target="#to-be-continued">To Be Continued …</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(2)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(2)</span></div><div class="category" data-category="data">data <span class="quarto-category-count">(2)</span></div></div></div>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<div class="quarto-about-jolla">
+ <main class="content" id="quarto-document-content">
 
-
-
-
-<section id="my-projects" class="level1">
-<h1>My Projects</h1>
-<hr>
-
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media_1.jpg" class="img-fluid figure-img"></p>
+<figcaption>104th TRBAM - 9th January 2025</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media_2.jpg" class="img-fluid figure-img"></p>
+<figcaption>104th TRBAM - 9th January 2025</figcaption>
+</figure>
+</div>
+<section id="to-be-continued" class="level1">
+<h1>To Be Continued …</h1>
 
 
 </section>
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="data,code,analysis" data-listing-date-sort="1710216000000" data-listing-file-modified-sort="1754142021810" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="609">
-<div class="thumbnail">
-<p><a href="./projects/Second Project/index.html" class="no-external"></a></p><a href="./projects/Second Project/index.html" class="no-external">
-<p><img loading="lazy" src="./projects/Second Project/thumbnail.jpg" class="thumbnail-image"></p>
-</a><p><a href="./projects/Second Project/index.html" class="no-external"></a></p>
+</main>  
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/Second Project/index.html" class="no-external">VR-Based Control System for a Husky UGV and Kinova Gen3 Robotic Arm</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/Second Project/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('data'); return false;">
-data
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./projects/Second Project/index.html" class="no-external">The agricultural industry is undergoing a technological revolution driven by automation and robotics. With the rising demand for efficient and sustainable farming practices…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/Second Project/index.html" class="no-external">
-<div class="listing-date">
-Mar 12, 2024
-</div>
-<div class="listing-author">
-Daniel A. Udekwe
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="data,code,analysis" data-listing-date-sort="1710216000000" data-listing-file-modified-sort="1754140762473" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1472">
-<div class="thumbnail">
-<p><a href="./projects/First Project/index.html" class="no-external"></a></p><a href="./projects/First Project/index.html" class="no-external">
-<p><img loading="lazy" src="./projects/First Project/thumbnail.png" class="thumbnail-image"></p>
-</a><p><a href="./projects/First Project/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/First Project/index.html" class="no-external">Real-Time Methane Emission Tracking in Livestock Using Embedded IoT Sensors</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/First Project/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('data'); return false;">
-data
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./projects/First Project/index.html" class="no-external">Livestock farming, particularly the dairy and beef industries, plays a significant role in global agricultural economies, providing essential food products and livelihoods…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/First Project/index.html" class="no-external">
-<div class="listing-date">
-Mar 12, 2024
-</div>
-<div class="listing-author">
-Daniel A. Udekwe
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -297,13 +160,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

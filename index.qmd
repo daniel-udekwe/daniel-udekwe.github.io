@@ -23,14 +23,14 @@ about:
           url: https://orcid.org/0000-0003-1771-5320
         - text: "{{< ai google-scholar >}} Google Scholar"
           url: https://scholar.google.com/citations?hl=en&user=PkqoFXIAAAAJ&view_op=list_works&sortby=pubdate
-        - text: "{{< ai viaf >}} VIAF 7190162669581955500004x"
-          url: http://viaf.org/viaf/7190162669581955500004x
-        - text: "{{< ai isni >}} ISNI 0000 0005 0265 5729x"
-          url: https://isni.org/isni/0000000502655729x
-        - text: "{{< ai researcherid >}} RID IZD-6900-2023x"
-          url: https://www.webofscience.com/wos/author/record/IZD-6900-2023x
-        - text: "{{< ai osf >}} OSF"
-          url: https://osf.io/awhgjx
+       # - text: "{{< ai viaf >}} VIAF 7190162669581955500004x"
+       #    url: http://viaf.org/viaf/7190162669581955500004x
+       # - text: "{{< ai isni >}} ISNI 0000 0005 0265 5729x"
+       #    url: https://isni.org/isni/0000000502655729x
+      #  - text: "{{< ai researcherid >}} RID IZD-6900-2023x"
+      #    url: https://www.webofscience.com/wos/author/record/IZD-6900-2023x
+      #  - text: "{{< ai osf >}} OSF"
+      #    url: https://osf.io/awhgjx
 image: img/danny.png
 comments: false
 ---
