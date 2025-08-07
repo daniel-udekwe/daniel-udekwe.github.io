@@ -11,3 +11,7 @@ title-block-banner: "banner.png"
 format: 
   html:
     code-tools: true
+    comments:
+      giscus:
+        repo: daniel-udekwe/daniel-udekwe.github.io
+
