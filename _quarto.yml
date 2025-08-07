@@ -10,8 +10,8 @@ website:
         text: Home
       - href: projects.qmd
         text: Projects
-      #- href: blog.qmd
-      #  text: Blog
+      - href: blog.qmd
+        text: Blog
       - href: cv.qmd
         text: Resume
       - href: media.qmd
