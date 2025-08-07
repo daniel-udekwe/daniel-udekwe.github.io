@@ -13,5 +13,5 @@ format:
     code-tools: true
     comments:
       giscus:
-        repo: daniel-udekwe/daniel-udekwe.github.io
+        repo: daniel-udekwe/comments
 
