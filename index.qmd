@@ -31,7 +31,7 @@ about:
       #    url: https://www.webofscience.com/wos/author/record/IZD-6900-2023x
       #  - text: "{{< ai osf >}} OSF"
       #    url: https://osf.io/awhgjx
-image: img/danny.png
+image: img/danny2.jpg
 comments: false
 ---
 
