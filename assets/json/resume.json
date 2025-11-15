@@ -25,7 +25,7 @@
   "work": [
     {
       "name": "Florida State University",
-      "position": "Graduate Research Assistant",
+      "position": "  Graduate Research Assistant",
       "url": "https://eng.famu.fsu.edu",
       "area": "Quantum Computation",
       "startDate": "2024-05",
@@ -35,31 +35,30 @@
   "volunteer": [],
   "education": [
     {
-      "institution": "University of Maryland, College Park",
-      "url": "https://amsc.umd.edu/",
-      "area": "Applied Mathematics & Statistics, and Scientific Computation (AMSC) Program",
-      "studyType": "Doctor of Philosophy (candidate)",
-      "startDate": "2019-09-01",
+      "institution": "Air Force Institute of Technology, NGA",
+      "url": "https://afit.edu.ng/",
+      "area": "Aerospace Vehicle Design",
+      "studyType": "Master of Science (MSc)",
       "endDate": "2024-05-21"
     },
     {
-      "institution": "University of Hong Kong",
-      "url": "https://www.scifac.hku.hk/",
-      "area": "Mathematics",
-      "studyType": "Bachelor of Science (First Class Honours)",
+      "institution": "Ahmadu Bello University, NGA",
+      "url": "https://abu.edu.ng/",
+      "area": "Control System Engineering",
+      "studyType": "Master of Science (MSc)",
       "startDate": "2015-09-01",
       "endDate": "2019-06-01"
     },
     {
-      "institution": "University of Chicago",
-      "url": "https://www.uchicago.edu/",
-      "area": "Mathematics",
-      "studyType": "Student-at-large (International exchange student)",
-      "startDate": "2017-09-01",
-      "endDate": "2018-06-01"
+      "institution": "Ahmadu Bello University, NGA",
+      "url": "https://abu.edu.ng",
+      "area": "Electrical Engineering",
+      "studyType": "Bachelor of Science",
+      "startDate": "2012-01-01",
+      "endDate": "2017-11-01"
     }
   ],
-  "awards": [],
+  "awards": [Dean's Fellowship Award],
   "certificates": [],
   "publications": [],
   "skills": [],
