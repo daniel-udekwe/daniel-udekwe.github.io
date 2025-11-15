@@ -8,7 +8,7 @@ profile:
   align: right
   image: profile.jpg
   image_circular: false # crops the image to make it circular
-  more_info: 
+  more_info:
 
 news: true # includes a list of news items
 latest_posts: false # includes a list of the newest posts
@@ -16,9 +16,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I am a Simons Quantum Postdoctoral Fellow at [Simons Institute for the Theory of Computing](https://simons.berkeley.edu/homepage) at UC Berkeley, hosted by [Umesh Vazirani](https://people.eecs.berkeley.edu/~vazirani/) and [Lin Lin](https://math.berkeley.edu/~linlin/). I got my Ph.D. from the University of Maryland in 2024, where I was fortunate to be advised by [Xiaodi Wu](https://www.cs.umd.edu/~xwu/). My name in Chinese: 冷佳奇.
+I am a doctoral researcher in Civil Engineering at the [FAMU-FSU College of Engineering](https://eng.famu.fsu.edu), working under the supervision of [Qianwen (Vivian) Guo](https://eng.famu.fsu.edu/cee/people/guo). My research spans **transportation engineering**, intelligent systems, and emerging computational methods. I previously earned my B.Eng. in Electrical Engineering, and my broader academic path reflects an interdisciplinary focus on both mobility systems and advanced computational tools
 
-My research focuses on the interplay between **machine learning** and **quantum computation**. I design quantum algorithms inspired by core principles in modern ML, such as optimization, sampling, and differentiable programming. To make these algorithms practical, I build scalable and automated toolchains for their simulation and deployment on current and near-term quantum computers. Recently, I am also interested in quantum-inspired methods amenable to large-scale acceleration on today's classical processors.
-
+My work centers on the intersection of machine learning, optimization, and intelligent transportation systems. I develop data-driven and algorithmic frameworks for improving roadway safety, accessibility, and mobility, drawing on modern methods such as deep learning, reinforcement learning, and quantum-inspired optimization. To support practical deployment, I build scalable simulation environments and toolchains—ranging from VR-based traffic and robotics simulations to hybrid classical–quantum optimization workflows.
 
 <span style="color:red; font-weight:bold;">I am on the job market in the academic year 2025-26, see my [CV](https://drive.google.com/file/d/1g7j7phRsAlqYNKO9F7zWc8Jd2RVFz2jF/view?usp=drive_link) here.</span>
