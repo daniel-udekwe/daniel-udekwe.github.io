@@ -1,11 +1,11 @@
 {
   "basics": {
-    "name": "Jiaqi (Jimmy) Leng",
-    "title": "Postdoctoral Researcher",
+    "name": "Daniel Udekwe",
+    "title": "Doctoral candidate",
     "image": "",
-    "email": "jiaqil@berkeley.edu",
+    "email": "dau24@fsu.edu",
     "phone": "",
-    "url": "https://jiaqileng.github.io/",
+    "url": "https://daniel-udekwe.github.io/",
     "summary": "",
     "location": {
       "address": "Melvin Calvin Laboratory",
@@ -24,11 +24,11 @@
   },
   "work": [
     {
-      "name": "University of California, Berkeley",
-      "position": "Simons Quantum Postdoctoral Fellow",
-      "url": "https://simons.berkeley.edu/homepage", 
+      "name": "Florida State University",
+      "position": "Graduate Research Assistant",
+      "url": "https://eng.famu.fsu.edu",
       "area": "Quantum Computation",
-      "startDate": "2024-07-01",
+      "startDate": "2024-05",
       "endDate": "Present"
     }
   ],
@@ -64,10 +64,6 @@
   "publications": [],
   "skills": [],
   "languages": [
-    {
-      "language": "Chinese (Mandarin)",
-      "fluency": "Native speaker"
-    },
     {
       "language": "English",
       "fluency": "Fluent"
