@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I will give a talk about quantum-accelerated algorithms for (classical) Gibbs sampling at the [2025 INFORMS Annual meeting (INFORMS 25)](https://meetings.informs.org/wordpress/annual/), in Session MC02 "Advances in Quantum Computing Optimization" (10/27, 2:00 - 2:15 pm, Building A Level 3 A302).
-
+I will give a poster presentation titled "A Quantum Inspired Bilevel Optimization framework for Bus Route accessibility Improvement Using QAOA" at the [2025 INFORMS Annual meeting (INFORMS 25)](https://meetings.informs.org/wordpress/annual/), at (10/28, 1:15 - 2:30 pm, Building A Level 1 Exhibit Hall A3).
