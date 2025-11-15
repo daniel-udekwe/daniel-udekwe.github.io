@@ -20,4 +20,4 @@ I am a doctoral researcher in Civil Engineering at the [FAMU-FSU College of Engi
 
 My work centers on the intersection of machine learning, optimization, and intelligent transportation systems. I develop data-driven and algorithmic frameworks for improving roadway safety, accessibility, and mobility, drawing on modern methods such as deep learning, reinforcement learning, and quantum-inspired optimization. To support practical deployment, I build scalable simulation environments and toolchains—ranging from VR-based traffic and robotics simulations to hybrid classical–quantum optimization workflows.
 
-<span style="color:red; font-weight:bold;">I am on the job market in the academic year 2025-26, see my [CV](https://drive.google.com/file/d/1g7j7phRsAlqYNKO9F7zWc8Jd2RVFz2jF/view?usp=drive_link) here.</span>
+<span style="color:red; font-weight:bold;">I am on the job market in the academic year 2026-27, see my [CV](https://drive.google.com/file/d/1er_iuwbxjOM8-6UnO0EGunGnwqvIfaZx/view?usp=drive_link) here.</span>

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: software
-permalink: /projects/
+#title: software
+#permalink: /projects/
 description: A collection of software for quantum applications
 nav: true
 nav_order: 3
