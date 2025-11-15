@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /talks/
-title: talks
+#title: talks
 description: Here is a list of my talks, arranged in reversed chronological order.
 nav: true
 nav_order: 5
@@ -41,10 +41,10 @@ nav_order: 5
 - **Quantum Hamiltonian Descent Algorithm for Nonlinear Optimization and Applications in Energy Systems**
 	- LANS Seminar (joint speaker: Lei Fan), Argonne National Laboratory. February 20, 2025.
 
-- **Quantum Dynamics for Contiuous Optimization** 
+- **Quantum Dynamics for Contiuous Optimization**
 	- Advancing Quantum Computation Beyond Gate-Model (BGM2024). October 8, 2024. [[Recording]](https://www.youtube.com/watch?v=5a-TnaHEDEs)
 
-- **Quantum approach to classical optimization: why bother and what to do?** [[Slides]](https://drive.google.com/file/d/1rGAMp_zqSD74c4NVkMnKbMJHxQ3dag6C/view?usp=sharing) 
+- **Quantum approach to classical optimization: why bother and what to do?** [[Slides]](https://drive.google.com/file/d/1rGAMp_zqSD74c4NVkMnKbMJHxQ3dag6C/view?usp=sharing)
 	- Meet the Fellows Welcome Event, Simons Institute for the Theory of Computing, UC Berkeley. September 3, 2024.
 	- Mines Quantum Information Seminar, Colorado School of Mines. April 16, 2024.
 	- Department of Computer Science, Georgetown University. April 12, 2024.
@@ -70,10 +70,9 @@ nav_order: 5
 	- Prof. Giuseppe Di Molfetta's group meeting, AIX-Marseille Université. January 17, 2023.
 
 - **Quantum search algorithms and discrete Schrödinger dynamics** [[Slides]](https://drive.google.com/file/d/13M6osYI0eJZWEWIpasVzUSLWCinlC1ib/view?usp=sharing)
-	- Student AMSC Seminar at **University of Maryland, College Park**. March 6, 2020. 
+	- Student AMSC Seminar at **University of Maryland, College Park**. March 6, 2020.
 
 ### Tutorial
 1. *Step-by-Step Guide to Solving Nonlinear Optimization with Quantum Computers*, tutorial, IEEE International Conference on Quantum Computing and Engineering **(QCE25)**. September 3, 2025.
 
 2. *"SimuQ: A Domain-Specific Language for Quantum Simulation with Analog Compilation"*, tutorial, IEEE International Conference on Quantum Computing and Engineering **(QCE23)**. September 20, 2023.
-
