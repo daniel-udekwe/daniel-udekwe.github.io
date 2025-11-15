@@ -1,0 +1,79 @@
+{
+  "basics": {
+    "name": "Jiaqi (Jimmy) Leng",
+    "title": "Postdoctoral Researcher",
+    "image": "",
+    "email": "jiaqil@berkeley.edu",
+    "phone": "",
+    "url": "https://jiaqileng.github.io/",
+    "summary": "",
+    "location": {
+      "address": "Melvin Calvin Laboratory",
+      "postalCode": "CA 94720",
+      "city": "Berkeley",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "",
+        "url": ""
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "University of California, Berkeley",
+      "position": "Simons Quantum Postdoctoral Fellow",
+      "url": "https://simons.berkeley.edu/homepage", 
+      "area": "Quantum Computation",
+      "startDate": "2024-07-01",
+      "endDate": "Present"
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "University of Maryland, College Park",
+      "url": "https://amsc.umd.edu/",
+      "area": "Applied Mathematics & Statistics, and Scientific Computation (AMSC) Program",
+      "studyType": "Doctor of Philosophy (candidate)",
+      "startDate": "2019-09-01",
+      "endDate": "2024-05-21"
+    },
+    {
+      "institution": "University of Hong Kong",
+      "url": "https://www.scifac.hku.hk/",
+      "area": "Mathematics",
+      "studyType": "Bachelor of Science (First Class Honours)",
+      "startDate": "2015-09-01",
+      "endDate": "2019-06-01"
+    },
+    {
+      "institution": "University of Chicago",
+      "url": "https://www.uchicago.edu/",
+      "area": "Mathematics",
+      "studyType": "Student-at-large (International exchange student)",
+      "startDate": "2017-09-01",
+      "endDate": "2018-06-01"
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [],
+  "languages": [
+    {
+      "language": "Chinese (Mandarin)",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": []
+}
