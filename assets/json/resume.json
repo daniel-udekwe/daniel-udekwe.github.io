@@ -35,28 +35,28 @@
   "volunteer": [],
   "education": [
     {
-      "institution": "Air Force Institute of Technology, NGA",
+      "institution": "Air Force Institute of Technology, NG",
       "url": "https://afit.edu.ng/",
       "area": "Aerospace Vehicle Design",
       "studyType": "Master of Science (MSc)",
 
     },
     {
-      "institution": "Ahmadu Bello University, NGA",
+      "institution": "Ahmadu Bello University, NG",
       "url": "https://abu.edu.ng/",
       "area": "Control System Engineering",
       "studyType": "Master of Science (MSc)",
 
     },
     {
-      "institution": "Ahmadu Bello University, NGA",
+      "institution": "Ahmadu Bello University, NG",
       "url": "https://abu.edu.ng",
       "area": "Electrical Engineering (BEng)",
       "studyType": "Bachelor of Science",
 
     }
   ],
-  "awards": [],
+  "awards": ["g"],
   "certificates": [],
   "publications": [],
   "skills": [],
