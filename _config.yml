@@ -3,12 +3,12 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Jiaqi (Jimmy)
-middle_name:
-last_name: Leng
-email: jiaqil@berkeley.edu
+first_name: Daniel
+middle_name: (Danny)
+last_name: Udekwe
+email: dau24@fsu.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Jiaqi Leng's Personal Website
+  Daniel Udekwe's Personal Website
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -16,7 +16,7 @@ keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: poseidon.jpg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://jiaqileng.github.io # the base hostname & protocol for your site
+url: https://daniel-udekwe.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -66,16 +66,16 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: jiaqileng # your GitHub user name
+github_username: daniel-udekwe # your GitHub user name
 gitlab_username: # your GitLab user name
 x_username: # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: Rr83RUsAAAAJ&hl=en # your Google Scholar ID
+scholar_userid: PkqoFXIAAAAJ&hl=en # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-orcid_id: 0000-0002-9276-2832 # your ORCID ID
+orcid_id: 0000-0003-1771-5320 # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
@@ -272,8 +272,8 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Leng]
-  first_name: [Jiaqi]
+  last_name: [Daniel]
+  first_name: [Udekwe]
 
   style: apa
   locale: en
