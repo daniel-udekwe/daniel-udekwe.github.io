@@ -1,0 +1,104 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Daniel A. Udekwe
+    - name: Email
+      value: dau24@fsu.edu
+    - name: Languages
+      value: English
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Doctor of Philosophy (Ph.D)
+      institution: Florida State University
+      year: 2024 - Present
+      description:
+        - Civil Engineering.
+        - title: Dissertation
+          contents:
+            - Leveraging Quantum Computing and Virtual Reality for Enhanced Transportation Network Design and Disaster Resilience Planning
+    - title: Master of Science (MSc)
+      institution: Air Force Institute of Technology, NGA
+      year: 2024
+      description:
+        - Aerospace Vehicle Design.
+        - title: Thesis
+          contents:
+            - Aeromechanical Design and Performance Evaluation of a Precision Guided Mortar Munition
+    - title: Master of Science (MSc)
+      institution: Ahmadu Bello University, NGA
+      year: 2022
+      description:
+        - Control System Engineering
+        - title: Thesis
+          contents:
+            - Development of a Deep Reinforcement Learning Controller for Trajectory Tracking of Classical Control Systems
+    - title: Bachelor of Engineering (BEng)
+      institution: Ahmadu Bello University, NGA
+      year: 2017
+      description:
+        - Electrical Engineering
+        - title: Project
+          contents:
+            - Implementation of Timing and Synchronization in Digital Clocks A Wireless Communication Design
+- title: Experience
+  type: time_table
+  contents:
+    - title: Graduate Research Assistant
+      institution: Florida State University
+      year: 2024 - present
+      description:
+        - Civil & Environmental Engineering Department
+        
+    - title: Graduate Research Assistant
+      institution: Virginia Polytechnic Institute and State University (Virginia Tech)
+      year: 2022 - 2024
+      description:
+        - Intelligent Automation and Connected Technologies Lab
+
+
+    - title: Graduate Assistant
+      institution: Air Force Institute of Technology, NG
+      year: 2020 - 2022
+      description:
+        - Aerospace Engineering Department
+
+    - title: Trainee
+      institution: Ahmadu Bello University
+      year: 2016 - 2017
+      description:
+        - Concept to Product Lab, Computer Engineering Department
+
+    - title: Intern
+      institution: Cisco Networking Academy
+      year: 2016
+      description:
+        - Cisco Certified Netowrk Associate (Routing and Switching)
+
+
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2024
+      items:
+        - FAMU-FSU College of Engineering Dean's Fellowship
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Human-Machine Interaction.
+      items:
+        - Virtual/Augmented/Mixed/Extended Reality.
+        - Robotics
+    - title: Computational Intelligence.
+      items:
+        - Reinforcement Learning.
+        - Quantum Computing.
+
+- title: Other Interests
+  type: list
+  contents:
+    - <u>Hobbies:</u> Chess, Podcasts, Ancient History.
