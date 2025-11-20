@@ -19,8 +19,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a doctoral researcher in Civil Engineering at the [FAMU-FSU College of Engineering](https://eng.famu.fsu.edu), working under the supervision of [Qianwen (Vivian) Guo](https://eng.famu.fsu.edu/cee/people/guo). My research spans **transportation engineering**, intelligent systems, and emerging computational methods. I previously earned my B.Eng. in Electrical Engineering, and my broader academic path reflects an interdisciplinary focus on both mobility systems and advanced computational tools
+I am a doctoral researcher in Civil Engineering at the [FAMU-FSU College of Engineering](https://eng.famu.fsu.edu), working under the supervision of [Qianwen (Vivian) Guo](https://eng.famu.fsu.edu/cee/people/guo). My research spans **transportation engineering**, with a focus on human–machine interaction and emerging computational methods that advance how transportation systems are designed and evaluated.
 
-My work centers on the intersection of machine learning, optimization, and intelligent transportation systems. I develop data-driven and algorithmic frameworks for improving roadway safety, accessibility, and mobility, drawing on modern methods such as deep learning, reinforcement learning, and quantum-inspired optimization. To support practical deployment, I build scalable simulation environments and toolchains—ranging from VR-based traffic and robotics simulations to hybrid classical–quantum optimization workflows.
+I hold a B.Eng. in Electrical Engineering, and my academic background reflects a strongly interdisciplinary approach to problem-solving. I am currently exploring the potential of quantum computing and virtual reality to support next-generation tools and methodologies in transportation network design.
 
 <span style="color:red; font-weight:bold;">I am on the job market in the academic year 2026-27, see my [CV](https://daniel-udekwe.github.io/assets/pdf/danielUdekweCV_A.pdf) here.</span>
