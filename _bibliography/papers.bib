@@ -3,34 +3,27 @@
 
 @string{aps = {American Physical Society,}}
 
-@article{okafor2021heuristic,
-  title={Heuristic and deep reinforcement learning-based PID control of trajectory tracking in a ball-and-plate system},
-  author={Okafor, Emmanuel and Udekwe, Daniel and Ibrahim, Yusuf and Bashir Mu'azu, Muhammed and Okafor, Ekene Gabriel},
-  journal={Journal of Information and Telecommunication},
-  volume={5},
-  number={2},
-  pages={179--196},
-  year={2021},
-  publisher={Taylor \& Francis},
-  preview={ball_plate_1.png},
+@article{udekwe2025q,
+  title={Q-restore: quantum-driven framework for resilient and equitable transportation network restoration},
+  author={Udekwe, Daniel and Ke, Ruimin and Lu, Jiaqing and Guo, Qian-wen},
+  journal={arXiv preprint arXiv:2501.11197},
+  year={2025},
   selected={true},
-  abstract={The manual tuning of controller parameters, for example, tuning proportional integral derivative (PID) gains often relies on tedious human engineering. To curb the aforementioned problem, we propose an artificial intelligence-based deep reinforcement learning (RL) PID controller (three variants) compared with genetic algorithm-based PID (GA-PID) and classical PID; a total of five controllers were simulated for controlling and trajectory tracking of the ball dynamics in a linearized ball-and-plate (𝐵&𝑃) system. For the experiments, we trained novel variants of deep RL-PID built from a customized deep deterministic policy gradient (DDPG) agent (by modifying the neural network architecture), resulting in two new RL agents (DDPG-FC-350-R-PID & DDPG-FC-350-E-PID). Each of the agents interacts with the environment through a policy and a learning algorithm to produce a set of actions (optimal PID gains). Additionally, we evaluated the five controllers to assess which method provides the best performance metrics in the context of the minimum index in predictive errors, steady-state-error, peak overshoot, and time-responses. The results show that our proposed architecture (DDPG-FC-350-E-PID) yielded the best performance and surpasses all other approaches on most of the evaluation metric indices. Furthermore, an appropriate training of an artificial intelligence-based controller can aid to obtain the best path tracking.},
+  preview={qrestore.png},
+  abstract={Efficient and socially equitable restoration of transportation networks post disasters is crucial for community resilience and access to essential services. The ability to rapidly recover critical infrastructure can significantly mitigate the impacts of disasters, particularly in underserved communities where prolonged isolation exacerbates vulnerabilities. Traditional restoration methods prioritize functionality over computational efficiency and equity, leaving low-income communities at a disadvantage during recovery. To address this gap, this research introduces a novel framework that combines quantum computing technology with an equity-focused approach to network restoration. Optimization of road link recovery within budget constraints is achieved by leveraging D Wave's hybrid quantum solver, which targets the connectivity needs of low, average, and high income communities. This framework combines computational speed with equity, ensuring priority support for underserved populations. Findings demonstrate that this hybrid quantum solver achieves near instantaneous computation times of approximately 8.7 seconds across various budget scenarios, significantly outperforming the widely used genetic algorithm. It offers targeted restoration by first aiding low-income communities and expanding aid as budgets increase, aligning with equity goals. This work showcases quantum computing's potential in disaster recovery planning, providing a rapid and equitable solution that elevates urban resilience and social sustainability by aiding vulnerable populations in disasters.},
   altmetric         = {true},
   dimensions        = {true},
   bibtex_show       = {true}
 }
 
-@article{udekwe2024comparing,
-  title={Comparing actor-critic deep reinforcement learning controllers for enhanced performance on a ball-and-plate system},
-  author={Udekwe, Daniel and Ajayi, Ore-ofe and Ubadike, Osichinaka and Ter, Kumater and Okafor, Emmanuel},
-  journal={Expert systems with applications},
-  volume={245},
-  pages={123055},
-  year={2024},
-  publisher={Elsevier},
-  preview={ball_plate_2.png},
+@article{udekwe2025vrise,
+  title={Vrise: A virtual reality platfrom for immersive and interactive surveying education},
+  author={Udekwe, Daniel and Bolkas, Dimitrios and Ozguven, Eren Erman and Moses, Ren and Guo, Qianwen},
+  journal={arXiv preprint arXiv:2507.22810},
+  year={2025},
   selected={true},
-  abstract={The optimization of controller parameters remains an ongoing challenge in the field of control system applications. This study introduces a novel approach involving the creation of custom actor-critic deep reinforcement learning (DRL) based PID controllers. These controllers are designed with the goal of achieving adaptive tuning, precise trajectory tracking, and stability in a ball-and-plate system. To achieve this objective, multiple actor-critic reinforcement learning agents were developed using different learning algorithms: Soft actor critic (SAC), deep deterministic policy gradient (DDPG), and twin delayed deep deterministic policy gradient (TD3). These agents incorporate multilayer-perceptron (MLP) policy learning algorithms in both the actor and critic network architectures, employing non-linear activation functions. This enables them to fine-tune PID control parameters within an infinite search space. Additionally, a custom reward function derived from the system’s environment was integrated into the learning process. The performance of the proposed methods was compared against a benchmark method, specifically, an existing deep reinforcement learning controllers reported in the literature. The evaluation of these controllers and other approaches was based on error metrics and time response analysis. Results demonstrate that the proposed controller denoted as SAC-PID(5) excelled in trajectory tracking and outperformed other methods. It exhibited minimal predictive errors and the shortest time responses in the majority of experiments. This highlights the significance of designing a customized SAC agents with appropriate network architecture, which positively impacts the learning process for intelligent tuning of controllers for classical control systems.},
+  preview = {vrise.png},
+  abstract={Surveying is a core component of civil engineering education, requiring students to engage in hands-on spatial measurement, instrumentation handling, and field-based decision-making. However, traditional instruction often poses logistical and cognitive challenges that can hinder accessibility and student engagement. While virtual laboratories have gained traction in engineering education, few are purposefully designed to support flexible, adaptive learning in surveying. To address this gap, we developed Virtual Reality for Immersive and Interactive Surveying Education (VRISE), an immersive virtual reality laboratory that replicates ground-based and aerial surveying tasks through customizable, accessible, and user-friendly modules. VRISE features interactive experiences such as differential leveling with a digital level equipment and waypoint-based drone navigation, enhanced by input smoothing, adaptive interfaces, and real-time feedback to accommodate diverse learning styles. Evaluation across multiple user sessions demonstrated consistent gains in measurement accuracy, task efficiency, and interaction quality, with a clear progression in skill development across the ground-based and aerial surveying modalities. By reducing cognitive load and physical demands, even in tasks requiring fine motor control and spatial reasoning, VRISE demonstrates the potential of immersive, repeatable digital environments to enhance surveying education, broaden participation, and strengthen core competencies in a safe and engaging setting.},
   altmetric         = {true},
   dimensions        = {true},
   bibtex_show       = {true}
@@ -71,29 +64,43 @@ In the first experiment, the system achieved detection rates of 63 % for small s
   bibtex_show       = {true}
 }
 
-
-@article{udekwe2025vrise,
-  title={Vrise: A virtual reality platfrom for immersive and interactive surveying education},
-  author={Udekwe, Daniel and Bolkas, Dimitrios and Ozguven, Eren Erman and Moses, Ren and Guo, Qianwen},
-  journal={arXiv preprint arXiv:2507.22810},
-  year={2025},
+@article{udekwe2024comparing,
+  title={Comparing actor-critic deep reinforcement learning controllers for enhanced performance on a ball-and-plate system},
+  author={Udekwe, Daniel and Ajayi, Ore-ofe and Ubadike, Osichinaka and Ter, Kumater and Okafor, Emmanuel},
+  journal={Expert systems with applications},
+  volume={245},
+  pages={123055},
+  year={2024},
+  publisher={Elsevier},
+  preview={ball_plate_2.png},
   selected={true},
-  preview = {vrise.png},
-  abstract={Surveying is a core component of civil engineering education, requiring students to engage in hands-on spatial measurement, instrumentation handling, and field-based decision-making. However, traditional instruction often poses logistical and cognitive challenges that can hinder accessibility and student engagement. While virtual laboratories have gained traction in engineering education, few are purposefully designed to support flexible, adaptive learning in surveying. To address this gap, we developed Virtual Reality for Immersive and Interactive Surveying Education (VRISE), an immersive virtual reality laboratory that replicates ground-based and aerial surveying tasks through customizable, accessible, and user-friendly modules. VRISE features interactive experiences such as differential leveling with a digital level equipment and waypoint-based drone navigation, enhanced by input smoothing, adaptive interfaces, and real-time feedback to accommodate diverse learning styles. Evaluation across multiple user sessions demonstrated consistent gains in measurement accuracy, task efficiency, and interaction quality, with a clear progression in skill development across the ground-based and aerial surveying modalities. By reducing cognitive load and physical demands, even in tasks requiring fine motor control and spatial reasoning, VRISE demonstrates the potential of immersive, repeatable digital environments to enhance surveying education, broaden participation, and strengthen core competencies in a safe and engaging setting.},
+  abstract={The optimization of controller parameters remains an ongoing challenge in the field of control system applications. This study introduces a novel approach involving the creation of custom actor-critic deep reinforcement learning (DRL) based PID controllers. These controllers are designed with the goal of achieving adaptive tuning, precise trajectory tracking, and stability in a ball-and-plate system. To achieve this objective, multiple actor-critic reinforcement learning agents were developed using different learning algorithms: Soft actor critic (SAC), deep deterministic policy gradient (DDPG), and twin delayed deep deterministic policy gradient (TD3). These agents incorporate multilayer-perceptron (MLP) policy learning algorithms in both the actor and critic network architectures, employing non-linear activation functions. This enables them to fine-tune PID control parameters within an infinite search space. Additionally, a custom reward function derived from the system’s environment was integrated into the learning process. The performance of the proposed methods was compared against a benchmark method, specifically, an existing deep reinforcement learning controllers reported in the literature. The evaluation of these controllers and other approaches was based on error metrics and time response analysis. Results demonstrate that the proposed controller denoted as SAC-PID(5) excelled in trajectory tracking and outperformed other methods. It exhibited minimal predictive errors and the shortest time responses in the majority of experiments. This highlights the significance of designing a customized SAC agents with appropriate network architecture, which positively impacts the learning process for intelligent tuning of controllers for classical control systems.},
   altmetric         = {true},
   dimensions        = {true},
   bibtex_show       = {true}
 }
 
-@article{udekwe2025q,
-  title={Q-restore: quantum-driven framework for resilient and equitable transportation network restoration},
-  author={Udekwe, Daniel and Ke, Ruimin and Lu, Jiaqing and Guo, Qian-wen},
-  journal={arXiv preprint arXiv:2501.11197},
-  year={2025},
+@article{okafor2021heuristic,
+  title={Heuristic and deep reinforcement learning-based PID control of trajectory tracking in a ball-and-plate system},
+  author={Okafor, Emmanuel and Udekwe, Daniel and Ibrahim, Yusuf and Bashir Mu'azu, Muhammed and Okafor, Ekene Gabriel},
+  journal={Journal of Information and Telecommunication},
+  volume={5},
+  number={2},
+  pages={179--196},
+  year={2021},
+  publisher={Taylor \& Francis},
+  preview={ball_plate_1.png},
   selected={true},
-  preview={qrestore.png},
-  abstract={Efficient and socially equitable restoration of transportation networks post disasters is crucial for community resilience and access to essential services. The ability to rapidly recover critical infrastructure can significantly mitigate the impacts of disasters, particularly in underserved communities where prolonged isolation exacerbates vulnerabilities. Traditional restoration methods prioritize functionality over computational efficiency and equity, leaving low-income communities at a disadvantage during recovery. To address this gap, this research introduces a novel framework that combines quantum computing technology with an equity-focused approach to network restoration. Optimization of road link recovery within budget constraints is achieved by leveraging D Wave's hybrid quantum solver, which targets the connectivity needs of low, average, and high income communities. This framework combines computational speed with equity, ensuring priority support for underserved populations. Findings demonstrate that this hybrid quantum solver achieves near instantaneous computation times of approximately 8.7 seconds across various budget scenarios, significantly outperforming the widely used genetic algorithm. It offers targeted restoration by first aiding low-income communities and expanding aid as budgets increase, aligning with equity goals. This work showcases quantum computing's potential in disaster recovery planning, providing a rapid and equitable solution that elevates urban resilience and social sustainability by aiding vulnerable populations in disasters.},
+  abstract={The manual tuning of controller parameters, for example, tuning proportional integral derivative (PID) gains often relies on tedious human engineering. To curb the aforementioned problem, we propose an artificial intelligence-based deep reinforcement learning (RL) PID controller (three variants) compared with genetic algorithm-based PID (GA-PID) and classical PID; a total of five controllers were simulated for controlling and trajectory tracking of the ball dynamics in a linearized ball-and-plate (𝐵&𝑃) system. For the experiments, we trained novel variants of deep RL-PID built from a customized deep deterministic policy gradient (DDPG) agent (by modifying the neural network architecture), resulting in two new RL agents (DDPG-FC-350-R-PID & DDPG-FC-350-E-PID). Each of the agents interacts with the environment through a policy and a learning algorithm to produce a set of actions (optimal PID gains). Additionally, we evaluated the five controllers to assess which method provides the best performance metrics in the context of the minimum index in predictive errors, steady-state-error, peak overshoot, and time-responses. The results show that our proposed architecture (DDPG-FC-350-E-PID) yielded the best performance and surpasses all other approaches on most of the evaluation metric indices. Furthermore, an appropriate training of an artificial intelligence-based controller can aid to obtain the best path tracking.},
   altmetric         = {true},
   dimensions        = {true},
   bibtex_show       = {true}
 }
+
+
+
+
+
+
+
+
