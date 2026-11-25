@@ -197,70 +197,186 @@ body.sticky-bottom-footer {
   }
 }
 
-// Publications page: larger previews (home page "selected publications" keeps small ones)
-.publications-page h2.bibliography {
-  margin-bottom: 0;
+// Linked publication titles (all publication lists)
+.publications ol.bibliography li .title a {
+  color: inherit;
+
+  &:hover {
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
 }
 
-.publications-page ol.bibliography li {
-  padding: 1rem 0;
-  margin-bottom: 0.5rem;
-  border-bottom: 1px solid var(--global-divider-color);
+// Publications page: card layout with large previews
+// (the home page "selected publications" list keeps the compact theme style)
+.publications.publications-page {
+  // Year headings: large, left-aligned, with an accent rule
+  h2.bibliography {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--global-text-color);
+    border-top: none;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 2.5rem 0 1rem;
+    padding-top: 0;
+    opacity: 1;
 
-  @media (min-width: 576px) {
-    > .row > .col-sm-2 {
-      flex: 0 0 34%;
-      max-width: 34%;
-    }
-
-    > .row > .col-sm-8 {
-      flex: 0 0 66%;
-      max-width: 66%;
+    &::after {
+      content: "";
+      flex: 1;
+      height: 2px;
+      background: linear-gradient(to right, var(--global-theme-color), transparent);
+      opacity: 0.6;
     }
   }
 
-  img.preview,
-  video.preview {
-    display: block;
-    width: 100%;
-    max-width: none;
-    aspect-ratio: 4 / 3;
-    object-fit: contain;
-    background-color: #fff;
+  ol.bibliography li {
+    margin-bottom: 1.25rem;
+    padding: 1rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.75rem;
+    background-color: var(--global-card-bg-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     transition:
       transform 0.25s ease,
       box-shadow 0.25s ease;
-  }
 
-  video.preview {
-    object-fit: cover;
-    background-color: #000;
-  }
-
-  img.preview:hover,
-  video.preview:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
-  }
-
-  // figure.liquid wraps images in <figure>; drop its default margin
-  figure {
-    margin: 0;
-  }
-
-  .title {
-    font-size: 1.05rem;
-    margin-bottom: 0.25rem;
-  }
-
-  @media (max-width: 575px) {
-    > .row > .col-sm-2 {
-      max-width: 100%;
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
     }
 
+    > .row {
+      align-items: center;
+    }
+
+    @media (min-width: 576px) {
+      > .row > .col-sm-2 {
+        flex: 0 0 36%;
+        max-width: 36%;
+      }
+
+      > .row > .col-sm-8 {
+        flex: 0 0 64%;
+        max-width: 64%;
+      }
+    }
+
+    @media (max-width: 575px) {
+      > .row > .col-sm-2 {
+        max-width: 100%;
+        margin-bottom: 0.9rem;
+      }
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    // Every preview sits in the same 16:10 frame, so the column looks even.
+    // Figures and diagrams are shown whole on a soft panel; videos fill the frame.
     img.preview,
     video.preview {
-      margin-bottom: 0.75rem;
+      display: block;
+      width: 100%;
+      max-width: none;
+      aspect-ratio: 16 / 10;
+      border-radius: 0.5rem !important;
+      box-shadow: none !important;
+      transition: transform 0.35s ease;
     }
+
+    img.preview {
+      object-fit: contain;
+      padding: 0.5rem;
+      background-color: #fff;
+      border: 1px solid var(--global-divider-color);
+    }
+
+    video.preview {
+      object-fit: cover;
+      background-color: #000;
+    }
+
+    .col-sm-2.preview {
+      overflow: hidden;
+      border-radius: 0.5rem;
+    }
+
+    &:hover img.preview,
+    &:hover video.preview {
+      transform: scale(1.04);
+    }
+
+    // Venue and year shown first, as a small accent label above the title
+    > .row > .col-sm-8 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .periodical {
+      order: -1;
+      color: var(--global-theme-color);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+
+      em {
+        font-style: normal;
+      }
+
+      &:empty {
+        display: none;
+      }
+    }
+
+    .title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      line-height: 1.35;
+      margin-bottom: 0.4rem;
+    }
+
+    .author {
+      font-size: 0.9rem;
+      color: var(--global-text-color-light);
+      margin-bottom: 0.6rem;
+    }
+
+    // Pill-shaped buttons
+    .links a.btn {
+      border-radius: 999px;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.85rem;
+      margin: 0 0.35rem 0.35rem 0;
+      border-color: var(--global-divider-color);
+
+      &:hover {
+        color: #fff;
+        background-color: var(--global-theme-color);
+        border-color: var(--global-theme-color);
+      }
+    }
+
+    // Abstract / BibTeX panels open full width below the buttons
+    > .row > .col-sm-8 > .hidden,
+    > .row > .col-sm-8 > .badges,
+    > .row > .col-sm-8 > .abstract,
+    > .row > .col-sm-8 > .bibtex {
+      order: 10;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .publications-page ol.bibliography li,
+  .publications-page ol.bibliography li img.preview,
+  .publications-page ol.bibliography li video.preview {
+    transition: none;
   }
 }
