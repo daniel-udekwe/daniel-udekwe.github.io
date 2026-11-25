@@ -471,3 +471,12 @@ body.sticky-bottom-footer {
     border-color: var(--global-divider-color);
   }
 }
+
+// Links page: two cards per row (three rows)
+.link-cards.link-cards-two {
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: 575px) {
+    grid-template-columns: 1fr;
+  }
+}

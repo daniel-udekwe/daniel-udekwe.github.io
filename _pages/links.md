@@ -1,6 +1,6 @@
 ---
 layout: page
-title: links
+title: Links
 permalink: /links/
 description: My CV, resume and academic profiles in one place.
 nav: true
@@ -12,16 +12,7 @@ resume_pdf: danielUdekweResume.pdf
 {% capture resume_path %}assets/pdf/{{ page.resume_pdf }}{% endcapture %}
 {% capture resume_exists %}{% file_exists {{ resume_path }} %}{% endcapture %}
 
-<div class="link-cards">
-{% if site.scholar_userid %}
-<a class="link-card" href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" target="_blank" rel="noopener">
-<i class="ai ai-google-scholar link-card-icon"></i>
-<span class="link-card-text">
-<span class="link-card-title">Google Scholar</span>
-<span class="link-card-desc">Publications and citations</span>
-</span>
-</a>
-{% endif %}
+<div class="link-cards link-cards-two">
 <a class="link-card" href="{{ '/assets/pdf/danielUdekweCV_A.pdf' | relative_url }}" target="_blank" rel="noopener">
 <i class="fa-solid fa-file-pdf link-card-icon"></i>
 <span class="link-card-text">
@@ -45,6 +36,15 @@ resume_pdf: danielUdekweResume.pdf
 <span class="link-card-desc">Coming soon</span>
 </span>
 </div>
+{% endif %}
+{% if site.scholar_userid %}
+<a class="link-card" href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" target="_blank" rel="noopener">
+<i class="ai ai-google-scholar link-card-icon"></i>
+<span class="link-card-text">
+<span class="link-card-title">Google Scholar</span>
+<span class="link-card-desc">Publications and citations</span>
+</span>
+</a>
 {% endif %}
 {% if site.linkedin_username %}
 <a class="link-card" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener">
