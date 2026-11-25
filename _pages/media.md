@@ -3,7 +3,7 @@ layout: page
 title: Media
 permalink: /media/
 description: Some Cool Pictures.
-nav: true
+nav: false
 nav_order: 3
 display_categories: [work, fun]
 horizontal: false

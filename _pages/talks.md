@@ -3,7 +3,7 @@ layout: page
 #permalink: /talks/
 #title: talks
 description: Here is a list of my talks, arranged in reversed chronological order.
-nav: true
+nav: false
 nav_order: 5
 ---
 
