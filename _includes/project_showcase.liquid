@@ -1,9 +1,46 @@
 <!--
   Animated project showcase for the home page.
-  Any project in _projects/ with a `loop:` field in its front matter appears here,
-  ordered by `importance`. Optional `loop_poster:` gives a still frame shown while loading.
+
+  - A project with a `loops:` list in its front matter gets a wide featured panel
+    showing all its clips in a grid. Each item: { src, poster (optional), label (optional) }.
+  - A project with a single `loop:` field gets a regular card.
+    Optional `loop_poster:` gives a still frame shown while loading.
+
+  Both are ordered by `importance` (lower number shows first).
 -->
+{% assign featured = site.projects | where_exp: 'p', 'p.loops' | sort: 'importance' %}
 {% assign showcase = site.projects | where_exp: 'p', 'p.loop' | sort: 'importance' %}
+
+{% for project in featured %}
+  <a class="showcase-card showcase-featured" href="{{ project.url | relative_url }}">
+    <div class="showcase-grid">
+      {% for clip in project.loops %}
+        <div class="showcase-media">
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            {% if clip.poster %}
+              poster="{{ clip.poster | relative_url }}"
+            {% endif %}
+            aria-label="{{ clip.label | default: project.title }}"
+          >
+            <source src="{{ clip.src | relative_url }}" type="video/mp4">
+          </video>
+          {% if clip.label %}<span class="showcase-label">{{ clip.label }}</span>{% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    <div class="showcase-caption">
+      <span class="showcase-title">{{ project.short_title | default: project.title }}</span>
+      {% if project.description %}<span class="showcase-desc">{{ project.description }}</span>{% endif %}
+      <span class="showcase-more">view project &rarr;</span>
+    </div>
+  </a>
+{% endfor %}
+
 {% if showcase.size > 0 %}
   <div class="project-showcase">
     {% for project in showcase %}

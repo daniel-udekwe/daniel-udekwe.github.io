@@ -126,3 +126,51 @@ body.sticky-bottom-footer {
     transition: none;
   }
 }
+
+// Wide featured panel (projects with several clips)
+.showcase-featured {
+  margin: 0.5rem 0 1rem;
+
+  .showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    background: #000;
+  }
+
+  .showcase-media {
+    position: relative;
+  }
+
+  .showcase-label {
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0.5rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.25rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 0.75rem;
+    pointer-events: none;
+  }
+
+  .showcase-title {
+    font-size: 1.05rem;
+  }
+
+  .showcase-desc {
+    color: var(--global-text-color-light);
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
+  }
+
+  &:hover .showcase-media video {
+    transform: scale(1.03);
+  }
+}
+
+@media (max-width: 576px) {
+  .showcase-featured .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+}
