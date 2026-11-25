@@ -1,0 +1,33 @@
+<!--
+  Animated project showcase for the home page.
+  Any project in _projects/ with a `loop:` field in its front matter appears here,
+  ordered by `importance`. Optional `loop_poster:` gives a still frame shown while loading.
+-->
+{% assign showcase = site.projects | where_exp: 'p', 'p.loop' | sort: 'importance' %}
+{% if showcase.size > 0 %}
+  <div class="project-showcase">
+    {% for project in showcase %}
+      <a class="showcase-card" href="{{ project.url | relative_url }}">
+        <div class="showcase-media">
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            {% if project.loop_poster %}
+              poster="{{ project.loop_poster | relative_url }}"
+            {% endif %}
+            aria-label="{{ project.title }} preview"
+          >
+            <source src="{{ project.loop | relative_url }}" type="video/mp4">
+          </video>
+        </div>
+        <div class="showcase-caption">
+          <span class="showcase-title">{{ project.short_title | default: project.title }}</span>
+          <span class="showcase-more">view project &rarr;</span>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}

@@ -4,6 +4,9 @@ title: Driving Simulation Environment for Behavioral and Safety Analysis
 description: A high-fidelity simulation environment for studying driver behavior, roadway safety, and human–machine interaction.
 img: /assets/img/project_imgs/simulator.png
 category: research
+short_title: Driving Simulator
+loop: /assets/video/loops/simulator.mp4
+loop_poster: /assets/video/loops/simulator.jpg
 importance: 3
 ---
 

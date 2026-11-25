@@ -4,6 +4,9 @@ title: Immersive Virtual Reality Environment for Traffic and Driver Behavior Stu
 description: A virtual reality platform designed to simulate traffic operations, support human–machine interaction research, and enhance transportation system training.
 img: /assets/img/project_imgs/traffic.png
 category: research
+short_title: VR Traffic Environment
+loop: /assets/video/loops/transport.mp4
+loop_poster: /assets/video/loops/transport.jpg
 importance: 2
 ---
 

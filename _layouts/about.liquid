@@ -40,6 +40,14 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <!-- Animated project showcase -->
+    {% if page.project_showcase %}
+      <h2>
+        <a href="{{ '/project/' | relative_url }}" style="color: inherit">projects in action</a>
+      </h2>
+      {% include project_showcase.liquid %}
+    {% endif %}
+
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>

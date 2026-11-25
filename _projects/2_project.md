@@ -4,6 +4,9 @@ title: Virtual Reality–Based Engineering Lab for Surveying Education
 description: A VR training environment designed to support engineering students in developing core surveying skills through immersive, hands-on interaction.
 img: /assets/img/project_imgs/surveying.png
 category: research
+short_title: VR Surveying Lab
+loop: /assets/video/loops/surveying.mp4
+loop_poster: /assets/video/loops/surveying.jpg
 importance: 2
 ---
 
