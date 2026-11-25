@@ -1,8 +1,44 @@
 github_users:
   - daniel-udekwe
 
+# Repositories shown on the Repositories page, grouped by research area.
+# Only public repositories can be shown. Add or remove lines to change what appears.
+github_repo_groups:
+  - title: Quantum computing and optimization
+    repos:
+      - daniel-udekwe/QAOA-BusRoute
+      - daniel-udekwe/Dwave-QC
+      - daniel-udekwe/D-wave-Files
+
+  - title: Robot navigation and human–robot interaction
+    repos:
+      - daniel-udekwe/ask-act-v2
+      - daniel-udekwe/turtlebot3-ask_or_act
+      - daniel-udekwe/RobotNavigation
+      - daniel-udekwe/Unity_KinovaHusky
+
+  - title: Hurricane evacuation modeling
+    repos:
+      - daniel-udekwe/AIRL-HurricaneSally
+      - daniel-udekwe/Hurricane_Ian
+
+  - title: Traffic safety and GeoAI
+    repos:
+      - daniel-udekwe/GeoAI_GNN_Crash_Code
+      - daniel-udekwe/SunGlare
+      - daniel-udekwe/beyond_the_curve
+      - daniel-udekwe/CurveSign
+      - daniel-udekwe/ITE-HSIS
+      - daniel-udekwe/Convoy_Paper
+
+  - title: Earlier work in machine learning and control
+    repos:
+      - daniel-udekwe/Actor-Critic-RL
+      - daniel-udekwe/ResNet-101-Plant-Disease
+
+# Flat list, used only if github_repo_groups is removed.
 github_repos:
-  - daniel-udekwe/Actor-Critic-RL
-  - daniel-udekwe/HumanRobotInteraction
-  - daniel-udekwe/UC-Berkeley-Machine-Learning
-  - daniel-udekwe/IoT-CH4-Evaluation
+  - daniel-udekwe/QAOA-BusRoute
+  - daniel-udekwe/ask-act-v2
+  - daniel-udekwe/AIRL-HurricaneSally
+  - daniel-udekwe/GeoAI_GNN_Crash_Code

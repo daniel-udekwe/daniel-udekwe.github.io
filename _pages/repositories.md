@@ -37,7 +37,16 @@ nav_order: 4
 
 ## GitHub Repositories
 
-{% if site.data.repositories.github_repos %}
+{% if site.data.repositories.github_repo_groups %}
+  {% for group in site.data.repositories.github_repo_groups %}
+<h3 class="repo-group-title">{{ group.title }}</h3>
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {% for repo in group.repos %}
+    {% include repository/repo.liquid repository=repo %}
+  {% endfor %}
+</div>
+  {% endfor %}
+{% elsif site.data.repositories.github_repos %}
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for repo in site.data.repositories.github_repos %}

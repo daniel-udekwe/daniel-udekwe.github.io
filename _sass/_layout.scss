@@ -380,3 +380,12 @@ body.sticky-bottom-footer {
     transition: none;
   }
 }
+
+// Repositories page: research-area headings
+.repo-group-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 2rem 0 0.5rem;
+  padding-left: 0.6rem;
+  border-left: 3px solid var(--global-theme-color);
+}
