@@ -1,0 +1,25 @@
+<!-- One card in the home page project showcase. Expects `project`. -->
+<a class="showcase-card" href="{{ project.url | relative_url }}">
+  <div class="showcase-media">
+    <video
+      autoplay
+      loop
+      muted
+      playsinline
+      preload="metadata"
+      {% if project.loop_poster %}
+        poster="{{ project.loop_poster | relative_url }}"
+      {% endif %}
+      aria-label="{{ project.title }} preview"
+    >
+      <source src="{{ project.loop | relative_url }}" type="video/mp4">
+    </video>
+  </div>
+  <div class="showcase-caption">
+    <span class="showcase-title">{{ project.short_title | default: project.title }}</span>
+    {% if project.showcase_size == 'wide' and project.description %}
+      <span class="showcase-desc">{{ project.description }}</span>
+    {% endif %}
+    <span class="showcase-more">view project &rarr;</span>
+  </div>
+</a>

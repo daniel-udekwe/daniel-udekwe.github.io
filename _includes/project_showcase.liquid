@@ -3,13 +3,16 @@
 
   - A project with a `loops:` list in its front matter gets a wide featured panel
     showing all its clips in a grid. Each item: { src, poster (optional), label (optional) }.
-  - A project with a single `loop:` field gets a regular card.
+  - A project with a single `loop:` field gets a regular card (three per row).
+    Add `showcase_size: wide` to put it in a row of larger cards, two per row.
     Optional `loop_poster:` gives a still frame shown while loading.
 
   Both are ordered by `importance` (lower number shows first).
 -->
 {% assign featured = site.projects | where_exp: 'p', 'p.loops' | sort: 'importance' %}
-{% assign showcase = site.projects | where_exp: 'p', 'p.loop' | sort: 'importance' %}
+{% assign with_loop = site.projects | where_exp: 'p', 'p.loop' | sort: 'importance' %}
+{% assign wide = with_loop | where: 'showcase_size', 'wide' %}
+{% assign showcase = with_loop | where_exp: 'p', "p.showcase_size != 'wide'" %}
 
 {% for project in featured %}
   <a class="showcase-card showcase-featured" href="{{ project.url | relative_url }}">
@@ -41,30 +44,18 @@
   </a>
 {% endfor %}
 
+{% if wide.size > 0 %}
+  <div class="project-showcase showcase-wide">
+    {% for project in wide %}
+      {% include project_showcase_card.liquid %}
+    {% endfor %}
+  </div>
+{% endif %}
+
 {% if showcase.size > 0 %}
   <div class="project-showcase">
     {% for project in showcase %}
-      <a class="showcase-card" href="{{ project.url | relative_url }}">
-        <div class="showcase-media">
-          <video
-            autoplay
-            loop
-            muted
-            playsinline
-            preload="metadata"
-            {% if project.loop_poster %}
-              poster="{{ project.loop_poster | relative_url }}"
-            {% endif %}
-            aria-label="{{ project.title }} preview"
-          >
-            <source src="{{ project.loop | relative_url }}" type="video/mp4">
-          </video>
-        </div>
-        <div class="showcase-caption">
-          <span class="showcase-title">{{ project.short_title | default: project.title }}</span>
-          <span class="showcase-more">view project &rarr;</span>
-        </div>
-      </a>
+      {% include project_showcase_card.liquid %}
     {% endfor %}
   </div>
 {% endif %}
