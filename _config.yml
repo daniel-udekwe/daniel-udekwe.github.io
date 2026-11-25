@@ -278,8 +278,8 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Daniel]
-  first_name: [Udekwe]
+  last_name: [Udekwe]
+  first_name: [Daniel]
 
   style: apa
   locale: en

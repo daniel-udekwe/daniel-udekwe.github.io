@@ -4,7 +4,23 @@
   {% if site.enable_publication_thumbnails %}
     <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
       {% if entry.preview %}
-        {% if entry.preview contains '://' %}
+        {% if entry.preview contains '.mp4' %}
+          <!-- Animated preview: a short looping video in assets/video/publication_preview/ -->
+          {% assign video_path = entry.preview | prepend: '/assets/video/publication_preview/' %}
+          {% assign poster_path = video_path | replace: '.mp4', '.jpg' %}
+          <video
+            class="preview z-depth-1 rounded"
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            poster="{{ poster_path | relative_url }}"
+            aria-label="{{ entry.title }}"
+          >
+            <source src="{{ video_path | relative_url }}" type="video/mp4">
+          </video>
+        {% elsif entry.preview contains '://' %}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
         {% else %}
           {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}

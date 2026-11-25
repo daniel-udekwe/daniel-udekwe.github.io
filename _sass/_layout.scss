@@ -196,3 +196,71 @@ body.sticky-bottom-footer {
     grid-template-columns: 1fr;
   }
 }
+
+// Publications page: larger previews (home page "selected publications" keeps small ones)
+.publications-page h2.bibliography {
+  margin-bottom: 0;
+}
+
+.publications-page ol.bibliography li {
+  padding: 1rem 0;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  @media (min-width: 576px) {
+    > .row > .col-sm-2 {
+      flex: 0 0 34%;
+      max-width: 34%;
+    }
+
+    > .row > .col-sm-8 {
+      flex: 0 0 66%;
+      max-width: 66%;
+    }
+  }
+
+  img.preview,
+  video.preview {
+    display: block;
+    width: 100%;
+    max-width: none;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    background-color: #fff;
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+
+  video.preview {
+    object-fit: cover;
+    background-color: #000;
+  }
+
+  img.preview:hover,
+  video.preview:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  }
+
+  // figure.liquid wraps images in <figure>; drop its default margin
+  figure {
+    margin: 0;
+  }
+
+  .title {
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
+  }
+
+  @media (max-width: 575px) {
+    > .row > .col-sm-2 {
+      max-width: 100%;
+    }
+
+    img.preview,
+    video.preview {
+      margin-bottom: 0.75rem;
+    }
+  }
+}
