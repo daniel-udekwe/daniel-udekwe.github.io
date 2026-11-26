@@ -29,6 +29,6 @@ Using INRIX probe-vehicle trajectories on four Escambia County, Florida corridor
     <video autoplay loop muted playsinline poster="{{ page.loop_poster | relative_url }}" class="img-fluid rounded z-depth-1" style="width:100%">
       <source src="{{ page.loop | relative_url }}" type="video/mp4">
     </video>
-    <div class="caption">Hurricane Sally approaches and makes landfall while a rolling-origin forecast steps through September 2020. The speed series is illustrative; the bars show the paper's reported error reductions.</div>
+    <div class="caption">Hurricane Sally comes ashore while traffic on the four study corridors streams away from the coast, stalls at landfall and then recovers, as a rolling-origin forecast steps through September 2020. The map, storm and speed series are illustrative; the bars show the paper's reported error reductions.</div>
   </div>
 </div>

@@ -30,6 +30,6 @@ A road graph is reconstructed from crash reference fields using training-period 
     <video autoplay loop muted playsinline poster="{{ page.loop_poster | relative_url }}" class="img-fluid rounded z-depth-1" style="width:100%">
       <source src="{{ page.loop | relative_url }}" type="video/mp4">
     </video>
-    <div class="caption">A stylized road network colored by forecast crash risk. Message passing reaches the highlighted segment's one-hop neighbors (solid rings); fainter rings mark the two- to four-hop residual dependence. Bars show the paper's residual Moran's I by model.</div>
+    <div class="caption">A stylized statewide highway map shaded by forecast crash risk. The enlarged interchange shows graph messages arriving from its one-hop neighbors, while dependence the networks do not capture persists out to four hops. Bars show the paper's residual Moran's I by model.</div>
   </div>
 </div>
