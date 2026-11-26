@@ -8,8 +8,8 @@ category: research
 importance: 7
 loop: /assets/video/loops/hurricane-sally.mp4
 loop_poster: /assets/video/loops/hurricane-sally.jpg
-showcase_order: 3
-showcase_size: third
+showcase_order: 4
+showcase_size: wide
 ---
 
 **Daniel Udekwe, Qianwen Guo, Eren Erman Ozguven, Alican Sevim, Xiao Huang, Yadong Wang, Adolf K.Y. Ng** · Under review

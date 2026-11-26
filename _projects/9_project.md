@@ -8,8 +8,8 @@ category: research
 importance: 4
 loop: /assets/video/loops/convoy.mp4
 loop_poster: /assets/video/loops/convoy.jpg
-showcase_order: 4
-showcase_size: full
+showcase_order: 3
+showcase_size: wide
 ---
 
 **Daniel Udekwe** · Under review

@@ -9,7 +9,7 @@ importance: 6
 loop: /assets/video/loops/geoai-gnn.mp4
 loop_poster: /assets/video/loops/geoai-gnn.jpg
 showcase_order: 2
-showcase_size: third
+showcase_size: wide
 ---
 
 **Daniel Udekwe, Qianwen (Vivian) Guo** · Under review
