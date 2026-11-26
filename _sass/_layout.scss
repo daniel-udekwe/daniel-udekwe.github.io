@@ -566,7 +566,8 @@ body.sticky-bottom-footer {
     transform 0.25s ease,
     box-shadow 0.25s ease;
 
-  img {
+  img,
+  video {
     display: block;
     width: 100%;
     height: auto;
@@ -604,7 +605,8 @@ body.sticky-bottom-footer {
     transform: translateY(-3px);
     box-shadow: 0 12px 26px rgba(0, 0, 0, 0.16);
 
-    img {
+    img,
+    video {
       transform: scale(1.04);
     }
 
@@ -642,7 +644,8 @@ body.sticky-bottom-footer {
     text-align: center;
   }
 
-  img {
+  img,
+  video {
     max-width: 90vw;
     max-height: 80vh;
     border-radius: 0.5rem;
