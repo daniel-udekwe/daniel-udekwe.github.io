@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 description:
 nav: true
-nav_order: 2
+nav_order: 3
 ---
 
 <div class="contact-page">
@@ -21,7 +21,7 @@ nav_order: 2
 <i class="fa-solid fa-location-dot link-card-icon"></i>
 <span class="link-card-text">
 <span class="link-card-title">Office</span>
-<span class="link-card-desc">Office E25A, FLVC Building<br>1753 W Paul Dirac Dr, Tallahassee, FL</span>
+<span class="link-card-desc">Office E18, FLVC Building<br>1753 W Paul Dirac Dr, Tallahassee, FL</span>
 </span>
 </a>
 {% if site.linkedin_username %}

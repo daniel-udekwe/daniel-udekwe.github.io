@@ -9,7 +9,7 @@ profile:
   image: profile.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Office E25A, FLVC Building</p>
+    <p>Office E18, FLVC Building</p>
     <p>1753 W Paul Dirac Dr,</p>
     <p>Tallahassee, Florida </p>
 
@@ -24,4 +24,4 @@ I am a doctoral researcher in Civil Engineering at the [FAMU-FSU College of Engi
 
 I hold a B.Eng. in Electrical Engineering, and my academic background reflects a strongly interdisciplinary approach to problem-solving. I am currently exploring the potential of quantum computing and virtual reality to support next-generation tools and methodologies in transportation network design.
 
-<span style="color:red; font-weight:bold;">I am on the job market in the academic year 2026-27, see my [CV](https://daniel-udekwe.github.io/assets/pdf/danielUdekweCV_A.pdf) here.</span>
+<span style="color:red; font-weight:bold;">I am on the job market in the academic year 2026-27, see my [CV](/assets/pdf/danielUdekweCV.pdf) here.</span>

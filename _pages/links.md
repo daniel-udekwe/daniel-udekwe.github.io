@@ -4,7 +4,7 @@ title: Links
 permalink: /links/
 description: My CV, resume and academic profiles in one place.
 nav: true
-nav_order: 1
+nav_order: 2
 # Resume: put your resume PDF in assets/pdf/ with this file name. Until then its card shows "Coming soon".
 resume_pdf: danielUdekweResume.pdf
 ---
@@ -13,7 +13,7 @@ resume_pdf: danielUdekweResume.pdf
 {% capture resume_exists %}{% file_exists {{ resume_path }} %}{% endcapture %}
 
 <div class="link-cards link-cards-two">
-<a class="link-card" href="{{ '/assets/pdf/danielUdekweCV_A.pdf' | relative_url }}" target="_blank" rel="noopener">
+<a class="link-card" href="{{ '/assets/pdf/danielUdekweCV.pdf' | relative_url }}" target="_blank" rel="noopener">
 <i class="fa-solid fa-file-pdf link-card-icon"></i>
 <span class="link-card-text">
 <span class="link-card-title">CV</span>
