@@ -5,7 +5,7 @@ short_title: Gaussian Splatting Digital Twin
 description: A photorealistic 3D reconstruction of a real campus environment, built with Gaussian splatting and populated with simulated pedestrians.
 img: /assets/img/project_imgs/gaussian-splat.jpg
 category: research
-importance: 1
+importance: 3
 showcase_size: wide
 loop: /assets/video/loops/gaussian-splat.mp4
 loop_poster: /assets/video/loops/gaussian-splat.jpg
