@@ -8,7 +8,7 @@ category: research
 importance: 3
 loop: /assets/video/loops/gaussian-splat.mp4
 loop_poster: /assets/video/loops/gaussian-splat.jpg
-showcase_order: 5
+showcase_order: 8
 showcase_size: wide
 ---
 

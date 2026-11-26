@@ -8,7 +8,7 @@ category: research
 importance: 4
 loop: /assets/video/loops/robot-fleet.mp4
 loop_poster: /assets/video/loops/robot-fleet.jpg
-showcase_order: 6
+showcase_order: 9
 showcase_size: wide
 ---
 

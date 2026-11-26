@@ -8,7 +8,7 @@ short_title: Driving Simulator
 loop: /assets/video/loops/simulator.mp4
 loop_poster: /assets/video/loops/simulator.jpg
 importance: 3
-showcase_order: 9
+showcase_order: 12
 ---
 
 ## Driving Simulator

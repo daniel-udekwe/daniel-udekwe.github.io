@@ -8,7 +8,7 @@ short_title: VR Traffic Environment
 loop: /assets/video/loops/transport.mp4
 loop_poster: /assets/video/loops/transport.jpg
 importance: 2
-showcase_order: 8
+showcase_order: 11
 ---
 
 ## VR-Based Intelligent Transportation System
