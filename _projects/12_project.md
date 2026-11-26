@@ -29,6 +29,6 @@ Using INRIX probe-vehicle trajectories on four Escambia County, Florida corridor
     <video autoplay loop muted playsinline poster="{{ page.loop_poster | relative_url }}" class="img-fluid rounded z-depth-1" style="width:100%">
       <source src="{{ page.loop | relative_url }}" type="video/mp4">
     </video>
-    <div class="caption">A 3D coastal corridor through three phases of Hurricane Sally: evacuation queues, an empty road at landfall, and recovered two-way traffic. Vehicle movements come from a SUMO microsimulation of an illustrative corridor; the speed series is illustrative, and the bars show the paper's reported error reductions.</div>
+    <div class="caption">A 3D coastal corridor through three phases of Hurricane Sally: evacuation queues, an empty road at landfall, and recovered two-way traffic. Vehicle movements come from a SUMO microsimulation of an illustrative corridor; the speed series is illustrative, and the bars show the paper's reported error reductions. 3D models by Kenney (CC0).</div>
   </div>
 </div>
