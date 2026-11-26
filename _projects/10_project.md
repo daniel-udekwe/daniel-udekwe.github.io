@@ -30,6 +30,6 @@ Glare exposure was reconstructed for 1.47 million police-reported North Carolina
     <video autoplay loop muted playsinline poster="{{ page.loop_poster | relative_url }}" class="img-fluid rounded z-depth-1" style="width:100%">
       <source src="{{ page.loop | relative_url }}" type="video/mp4">
     </video>
-    <div class="caption">As the sun drops toward the driver's line of sight, glare washes out the road ahead. The bars show the paper's officer-coded glare rates for each sun–heading angle band.</div>
+    <div class="caption">As the sun drops toward the driver's line of sight, glare washes out the car ahead and the oncoming traffic. The bars show the paper's officer-coded glare rates for each sun–heading angle band.</div>
   </div>
 </div>
