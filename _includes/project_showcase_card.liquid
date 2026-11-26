@@ -17,7 +17,7 @@
   </div>
   <div class="showcase-caption">
     <span class="showcase-title">{{ project.short_title | default: project.title }}</span>
-    {% if project.showcase_size == 'wide' or project.showcase_size == 'full' %}{% if project.description %}
+    {% if project.showcase_size == 'wide' or project.showcase_size == 'full' or project.showcase_size == 'third' %}{% if project.description %}
       <span class="showcase-desc">{{ project.description }}</span>
     {% endif %}{% endif %}
     <span class="showcase-more">view project &rarr;</span>

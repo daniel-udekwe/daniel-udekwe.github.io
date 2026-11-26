@@ -8,6 +8,7 @@
   - `loops:` list            -> wide panel showing all clips in a grid
   - `showcase_size: full`    -> one card across the full width
   - `showcase_size: wide`    -> larger card, two per row
+  - `showcase_size: third`   -> medium card with description, three per row
   - nothing                  -> small card, several per row
   Neighbouring wide or small cards are grouped into rows automatically.
 -->
@@ -19,15 +20,17 @@
     {% assign kind = 'featured' %}
   {% elsif project.loop == nil %}
     {% continue %}
-  {% elsif project.showcase_size == 'full' or project.showcase_size == 'wide' %}
+  {% elsif project.showcase_size == 'full' or project.showcase_size == 'wide' or project.showcase_size == 'third' %}
     {% assign kind = project.showcase_size %}
   {% else %}
     {% assign kind = 'small' %}
   {% endif %}
 
   {% if kind != current %}
-    {% if current == 'wide' or current == 'small' %}</div>{% endif %}
-    {% if kind == 'wide' %}
+    {% if current == 'wide' or current == 'small' or current == 'third' %}</div>{% endif %}
+    {% if kind == 'third' %}
+      <div class="project-showcase showcase-thirds">
+    {% elsif kind == 'wide' %}
       <div class="project-showcase showcase-wide">
     {% elsif kind == 'small' %}
       <div class="project-showcase">
@@ -68,4 +71,4 @@
   {% endif %}
 {% endfor %}
 
-{% if current == 'wide' or current == 'small' %}</div>{% endif %}
+{% if current == 'wide' or current == 'small' or current == 'third' %}</div>{% endif %}

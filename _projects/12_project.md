@@ -9,7 +9,7 @@ importance: 7
 loop: /assets/video/loops/hurricane-sally.mp4
 loop_poster: /assets/video/loops/hurricane-sally.jpg
 showcase_order: 7
-showcase_size: full
+showcase_size: third
 ---
 
 **Daniel Udekwe, Qianwen Guo, Eren Erman Ozguven, Alican Sevim, Xiao Huang, Yadong Wang, Adolf K.Y. Ng** · Under review

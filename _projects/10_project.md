@@ -9,7 +9,7 @@ importance: 5
 loop: /assets/video/loops/sun-glare.mp4
 loop_poster: /assets/video/loops/sun-glare.jpg
 showcase_order: 5
-showcase_size: wide
+showcase_size: third
 ---
 
 **Daniel Udekwe, Zhipeng Deng, Xiao Huang, Eren Erman Ozguven, Ren Moses, Qianwen Guo** · Under review
