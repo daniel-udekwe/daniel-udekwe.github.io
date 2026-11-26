@@ -30,6 +30,6 @@ A road graph is reconstructed from crash reference fields using training-period 
     <video autoplay loop muted playsinline poster="{{ page.loop_poster | relative_url }}" class="img-fluid rounded z-depth-1" style="width:100%">
       <source src="{{ page.loop | relative_url }}" type="video/mp4">
     </video>
-    <div class="caption">A street network with road segments shaded by forecast crash risk, quarter by quarter. Graph messages flow into the starred intersection from its one-hop neighbours; numbers mark hop distance, out to the four hops over which residual dependence persists. Traffic is microsimulated in SUMO on an illustrative network; the bars show the paper's residual Moran's I by model.</div>
+    <div class="caption">North Carolina's road network as a graph, with nodes coloured by forecast crash risk. The view zooms into one segment: GNN messages flow in from its directly connected neighbours (1 hop), while residual dependence still links segments up to 4 hops away. The graph is illustrative; the bars show the paper's residual Moran's I by model.</div>
   </div>
 </div>
