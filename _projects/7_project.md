@@ -8,7 +8,7 @@ category: research
 importance: 1
 loop: /assets/video/loops/qaoa-bus.mp4
 loop_poster: /assets/video/loops/qaoa-bus.jpg
-showcase_order: 2
+showcase_order: 5
 showcase_size: wide
 ---
 

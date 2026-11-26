@@ -8,7 +8,7 @@ category: research
 importance: 7
 loop: /assets/video/loops/hurricane-sally.mp4
 loop_poster: /assets/video/loops/hurricane-sally.jpg
-showcase_order: 7
+showcase_order: 3
 showcase_size: third
 ---
 

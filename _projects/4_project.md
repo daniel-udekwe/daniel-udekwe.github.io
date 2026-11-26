@@ -19,7 +19,7 @@ loops:
   - src: /assets/video/loops/crash-side-2.mp4
     poster: /assets/video/loops/crash-side-2.jpg
     label: Oblique side impact
-showcase_order: 4
+showcase_order: 7
 ---
 
 ## Vehicle Crash Simulation

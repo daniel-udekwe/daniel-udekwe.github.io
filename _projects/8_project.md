@@ -8,7 +8,7 @@ category: research
 importance: 2
 loop: /assets/video/loops/quantum-transit.mp4
 loop_poster: /assets/video/loops/quantum-transit.jpg
-showcase_order: 3
+showcase_order: 6
 showcase_size: wide
 ---
 

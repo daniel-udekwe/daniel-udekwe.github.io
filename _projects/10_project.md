@@ -8,7 +8,7 @@ category: research
 importance: 5
 loop: /assets/video/loops/sun-glare.mp4
 loop_poster: /assets/video/loops/sun-glare.jpg
-showcase_order: 5
+showcase_order: 1
 showcase_size: third
 ---
 
