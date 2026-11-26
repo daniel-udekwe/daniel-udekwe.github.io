@@ -30,6 +30,6 @@ A road graph is reconstructed from crash reference fields using training-period 
     <video autoplay loop muted playsinline poster="{{ page.loop_poster | relative_url }}" class="img-fluid rounded z-depth-1" style="width:100%">
       <source src="{{ page.loop | relative_url }}" type="video/mp4">
     </video>
-    <div class="caption">A 3D street network with road segments shaded by forecast crash risk, quarter by quarter. Graph messages flow into the highlighted intersection from its one-hop neighbours, while rings mark the residual dependence that extends to four hops. Traffic is microsimulated in SUMO on an illustrative network; the bars show the paper's residual Moran's I by model. 3D models by Kenney (CC0).</div>
+    <div class="caption">A street network with road segments shaded by forecast crash risk, quarter by quarter. Graph messages flow into the starred intersection from its one-hop neighbours; numbers mark hop distance, out to the four hops over which residual dependence persists. Traffic is microsimulated in SUMO on an illustrative network; the bars show the paper's residual Moran's I by model.</div>
   </div>
 </div>
