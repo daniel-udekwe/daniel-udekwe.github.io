@@ -8,6 +8,7 @@ short_title: VR Surveying Lab
 loop: /assets/video/loops/surveying.mp4
 loop_poster: /assets/video/loops/surveying.jpg
 importance: 2
+showcase_order: 7
 ---
 
 ## Virtual Reality–Based Engineering Lab for Surveying Education

@@ -1,5 +1,5 @@
 <!-- One card in the home page project showcase. Expects `project`. -->
-<a class="showcase-card" href="{{ project.url | relative_url }}">
+<a class="showcase-card{% if project.showcase_size == 'full' %} showcase-full{% endif %}" href="{{ project.url | relative_url }}">
   <div class="showcase-media">
     <video
       autoplay
@@ -17,9 +17,9 @@
   </div>
   <div class="showcase-caption">
     <span class="showcase-title">{{ project.short_title | default: project.title }}</span>
-    {% if project.showcase_size == 'wide' and project.description %}
+    {% if project.showcase_size == 'wide' or project.showcase_size == 'full' %}{% if project.description %}
       <span class="showcase-desc">{{ project.description }}</span>
-    {% endif %}
+    {% endif %}{% endif %}
     <span class="showcase-more">view project &rarr;</span>
   </div>
 </a>

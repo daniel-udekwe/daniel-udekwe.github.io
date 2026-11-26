@@ -6,9 +6,10 @@ description: A budget-preserving QAOA chooses new bus stops so more older adults
 img: /assets/img/project_imgs/qaoa-bus.jpg
 category: research
 importance: 1
-showcase_size: wide
 loop: /assets/video/loops/qaoa-bus.mp4
 loop_poster: /assets/video/loops/qaoa-bus.jpg
+showcase_order: 2
+showcase_size: wide
 ---
 
 **Daniel Udekwe, Ruimin Ke, Qianwen Guo** · Under review

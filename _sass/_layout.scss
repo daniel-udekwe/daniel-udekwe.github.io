@@ -480,3 +480,16 @@ body.sticky-bottom-footer {
     grid-template-columns: 1fr;
   }
 }
+
+// Full-width showcase card (`showcase_size: full`)
+.showcase-card.showcase-full {
+  margin: 0.5rem 0 1rem;
+
+  .showcase-title {
+    font-size: 1.05rem;
+  }
+
+  &:hover .showcase-media video {
+    transform: scale(1.02);
+  }
+}

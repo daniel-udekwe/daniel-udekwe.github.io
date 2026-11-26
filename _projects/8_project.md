@@ -6,9 +6,10 @@ description: Quantum amplitude estimation measures whether disrupted neighborhoo
 img: /assets/img/project_imgs/quantum-transit.jpg
 category: research
 importance: 2
-showcase_size: wide
 loop: /assets/video/loops/quantum-transit.mp4
 loop_poster: /assets/video/loops/quantum-transit.jpg
+showcase_order: 3
+showcase_size: wide
 ---
 
 **Daniel Udekwe** · Under review

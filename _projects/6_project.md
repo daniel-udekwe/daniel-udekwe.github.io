@@ -6,9 +6,10 @@ description: A QUBO framework for joint go, yield and ask decisions.
 img: /assets/img/project_imgs/robot-fleet.jpg
 category: research
 importance: 4
-showcase_size: wide
 loop: /assets/video/loops/robot-fleet.mp4
 loop_poster: /assets/video/loops/robot-fleet.jpg
+showcase_order: 6
+showcase_size: wide
 ---
 
 ## Coordinating Human Assistance in Multi-Robot Fleets

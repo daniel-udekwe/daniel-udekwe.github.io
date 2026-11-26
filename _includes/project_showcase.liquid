@@ -1,61 +1,71 @@
 <!--
-  Animated project showcase for the home page.
+  Animated project showcase for the home page ("projects in action").
 
-  - A project with a `loops:` list in its front matter gets a wide featured panel
-    showing all its clips in a grid. Each item: { src, poster (optional), label (optional) }.
-  - A project with a single `loop:` field gets a regular card (three per row).
-    Add `showcase_size: wide` to put it in a row of larger cards, two per row.
-    Optional `loop_poster:` gives a still frame shown while loading.
+  Every project in _projects/ with a `loop:` (one clip) or `loops:` (several clips)
+  appears here, in order of `showcase_order` (1 shows first).
 
-  Both are ordered by `importance` (lower number shows first).
+  Size of each item:
+  - `loops:` list            -> wide panel showing all clips in a grid
+  - `showcase_size: full`    -> one card across the full width
+  - `showcase_size: wide`    -> larger card, two per row
+  - nothing                  -> small card, several per row
+  Neighbouring wide or small cards are grouped into rows automatically.
 -->
-{% assign featured = site.projects | where_exp: 'p', 'p.loops' | sort: 'importance' %}
-{% assign with_loop = site.projects | where_exp: 'p', 'p.loop' | sort: 'importance' %}
-{% assign wide = with_loop | where: 'showcase_size', 'wide' %}
-{% assign showcase = with_loop | where_exp: 'p', "p.showcase_size != 'wide'" %}
+{% assign items = site.projects | where_exp: 'p', 'p.showcase_order' | sort: 'showcase_order' %}
+{% assign current = '' %}
 
-{% for project in featured %}
-  <a class="showcase-card showcase-featured" href="{{ project.url | relative_url }}">
-    <div class="showcase-grid">
-      {% for clip in project.loops %}
-        <div class="showcase-media">
-          <video
-            autoplay
-            loop
-            muted
-            playsinline
-            preload="metadata"
-            {% if clip.poster %}
-              poster="{{ clip.poster | relative_url }}"
-            {% endif %}
-            aria-label="{{ clip.label | default: project.title }}"
-          >
-            <source src="{{ clip.src | relative_url }}" type="video/mp4">
-          </video>
-          {% if clip.label %}<span class="showcase-label">{{ clip.label }}</span>{% endif %}
-        </div>
-      {% endfor %}
-    </div>
-    <div class="showcase-caption">
-      <span class="showcase-title">{{ project.short_title | default: project.title }}</span>
-      {% if project.description %}<span class="showcase-desc">{{ project.description }}</span>{% endif %}
-      <span class="showcase-more">view project &rarr;</span>
-    </div>
-  </a>
+{% for project in items %}
+  {% if project.loops %}
+    {% assign kind = 'featured' %}
+  {% elsif project.loop == nil %}
+    {% continue %}
+  {% elsif project.showcase_size == 'full' or project.showcase_size == 'wide' %}
+    {% assign kind = project.showcase_size %}
+  {% else %}
+    {% assign kind = 'small' %}
+  {% endif %}
+
+  {% if kind != current %}
+    {% if current == 'wide' or current == 'small' %}</div>{% endif %}
+    {% if kind == 'wide' %}
+      <div class="project-showcase showcase-wide">
+    {% elsif kind == 'small' %}
+      <div class="project-showcase">
+    {% endif %}
+    {% assign current = kind %}
+  {% endif %}
+
+  {% if kind == 'featured' %}
+    <a class="showcase-card showcase-featured" href="{{ project.url | relative_url }}">
+      <div class="showcase-grid">
+        {% for clip in project.loops %}
+          <div class="showcase-media">
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="metadata"
+              {% if clip.poster %}
+                poster="{{ clip.poster | relative_url }}"
+              {% endif %}
+              aria-label="{{ clip.label | default: project.title }}"
+            >
+              <source src="{{ clip.src | relative_url }}" type="video/mp4">
+            </video>
+            {% if clip.label %}<span class="showcase-label">{{ clip.label }}</span>{% endif %}
+          </div>
+        {% endfor %}
+      </div>
+      <div class="showcase-caption">
+        <span class="showcase-title">{{ project.short_title | default: project.title }}</span>
+        {% if project.description %}<span class="showcase-desc">{{ project.description }}</span>{% endif %}
+        <span class="showcase-more">view project &rarr;</span>
+      </div>
+    </a>
+  {% else %}
+    {% include project_showcase_card.liquid %}
+  {% endif %}
 {% endfor %}
 
-{% if wide.size > 0 %}
-  <div class="project-showcase showcase-wide">
-    {% for project in wide %}
-      {% include project_showcase_card.liquid %}
-    {% endfor %}
-  </div>
-{% endif %}
-
-{% if showcase.size > 0 %}
-  <div class="project-showcase">
-    {% for project in showcase %}
-      {% include project_showcase_card.liquid %}
-    {% endfor %}
-  </div>
-{% endif %}
+{% if current == 'wide' or current == 'small' %}</div>{% endif %}
